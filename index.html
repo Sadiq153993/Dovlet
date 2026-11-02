@@ -1,0 +1,2103 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dövlət qulluğunda etik davranış — Maarifləndirici İnternet Resursu</title>
+  <link rel="stylesheet" href="./src/styles/editorial-civic.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f5;
+      font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      color: #050505;
+    }
+
+    /* ==========================================================================
+       ORIGINAL UNTOUCHED KEXSIO EDITORIAL HERO SECTION
+       ========================================================================== */
+    .civil-ethics-hero {
+      --mouse-x: 0;
+      --mouse-y: 0;
+      --img-scale: 1.055;
+      --small-img-scale: 1.075;
+      position: relative;
+      isolation: isolate;
+      width: 100%;
+      height: 100svh;
+      min-height: 480px;
+      overflow: hidden;
+      background-color: #f7f7f5;
+      color: #050505;
+      border: none;
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    .civil-ethics-hero *,
+    .civil-ethics-hero *::before,
+    .civil-ethics-hero *::after {
+      box-sizing: border-box;
+    }
+
+    /* 1. Main Title */
+    .civil-ethics-title {
+      position: absolute;
+      top: 5.2%;
+      left: 3.65%;
+      z-index: 5;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: clamp(76px, 10.4vw, 166px);
+      font-weight: 700;
+      line-height: 0.78;
+      letter-spacing: -0.087em;
+      text-transform: uppercase;
+      color: #000000;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .civil-ethics-title-mask {
+      display: block;
+      overflow: hidden;
+      padding-right: 0.09em;
+      padding-bottom: 0.1em;
+    }
+
+    .civil-ethics-title-word {
+      display: block;
+      transform: translateY(115%);
+      animation: titleSlideUp 1.05s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    .civil-ethics-title-word.line-1 {
+      animation-delay: 0s;
+    }
+
+    .civil-ethics-title-word.line-2 {
+      animation-delay: 100ms;
+    }
+
+    @keyframes titleSlideUp {
+      from { transform: translateY(115%); }
+      to { transform: translateY(0); }
+    }
+
+    /* 2. Main Center Image */
+    .civil-ethics-main-figure {
+      position: absolute;
+      top: 30.1%;
+      left: 26.45%;
+      width: 43.25%;
+      height: 51.4%;
+      min-height: 205px;
+      z-index: 2;
+      margin: 0;
+      overflow: hidden;
+      background-color: #e5e3de;
+      border-radius: clamp(24px, 3.15vw, 46px);
+      clip-path: inset(0 100% 0 0 round clamp(24px, 3.15vw, 46px));
+      animation: revealFromLeft 1.25s cubic-bezier(0.77, 0, 0.18, 1) 280ms forwards;
+    }
+
+    @keyframes revealFromLeft {
+      from {
+        clip-path: inset(0 100% 0 0 round clamp(24px, 3.15vw, 46px));
+      }
+      to {
+        clip-path: inset(0 0 0 0 round clamp(24px, 3.15vw, 46px));
+      }
+    }
+
+    .civil-ethics-main-img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      object-position: center 58%;
+      transform: translate(calc(var(--mouse-x) * -8px), calc(var(--mouse-y) * -6px)) scale(var(--img-scale));
+      transition: transform 1.3s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: transform;
+    }
+
+    .civil-ethics-main-figure:hover {
+      --img-scale: 1.095;
+    }
+
+    .civil-ethics-overlay {
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      pointer-events: none;
+      z-index: 2;
+      background: linear-gradient(
+        115deg,
+        rgba(255, 255, 255, 0.13),
+        transparent 38%,
+        rgba(0, 0, 0, 0.04)
+      );
+      mix-blend-mode: soft-light;
+    }
+
+    /* 3. Left Text Block */
+    .civil-ethics-left-text {
+      position: absolute;
+      left: 3.7%;
+      top: 56.7%;
+      z-index: 4;
+      width: min(205px, 19.5vw);
+    }
+
+    .civil-ethics-left-label {
+      font-size: clamp(10px, 0.83vw, 13px);
+      font-weight: 400;
+      line-height: 1.43;
+      letter-spacing: -0.025em;
+      margin: 0;
+      margin-bottom: clamp(28px, 8.5vh, 68px);
+      color: #050505;
+      opacity: 0;
+      transform: translateY(18px);
+      animation: textFadeInUp 800ms cubic-bezier(0.16, 1, 0.3, 1) 720ms forwards;
+    }
+
+    .civil-ethics-left-desc {
+      font-size: clamp(10px, 0.83vw, 13px);
+      font-weight: 400;
+      line-height: 1.43;
+      letter-spacing: -0.025em;
+      margin: 0;
+      color: #050505;
+      opacity: 0;
+      transform: translateY(18px);
+      animation: textFadeInUp 800ms cubic-bezier(0.16, 1, 0.3, 1) 830ms forwards;
+    }
+
+    .civil-ethics-bold-prefix {
+      font-weight: 600;
+    }
+
+    @keyframes textFadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(18px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* 4. Right Panel */
+    .civil-ethics-right-panel {
+      position: absolute;
+      top: 30.8%;
+      left: 72.35%;
+      width: 25%;
+      max-width: 390px;
+      z-index: 3;
+      margin: 0;
+    }
+
+    /* Small Right Image */
+    .civil-ethics-small-figure {
+      position: relative;
+      width: 100%;
+      height: clamp(104px, 23.4vh, 205px);
+      overflow: hidden;
+      background-color: #ddd9d0;
+      margin: 0;
+      border-radius: clamp(25px, 3.2vw, 46px);
+      clip-path: inset(0 0 0 100% round clamp(25px, 3.2vw, 46px));
+      animation: revealFromRight 1.15s cubic-bezier(0.77, 0, 0.18, 1) 440ms forwards;
+    }
+
+    @keyframes revealFromRight {
+      from {
+        clip-path: inset(0 0 0 100% round clamp(25px, 3.2vw, 46px));
+      }
+      to {
+        clip-path: inset(0 0 0 0 round clamp(25px, 3.2vw, 46px));
+      }
+    }
+
+    .civil-ethics-small-img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      object-position: center 57%;
+      transform: translate(calc(var(--mouse-x) * 7px), calc(var(--mouse-y) * 5px)) scale(var(--small-img-scale));
+      transition: transform 1.3s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: transform;
+    }
+
+    .civil-ethics-small-figure:hover {
+      --small-img-scale: 1.13;
+    }
+
+    /* Right Heading & Paragraph */
+    .civil-ethics-right-content {
+      padding-top: clamp(18px, 4.2vh, 35px);
+    }
+
+    .civil-ethics-right-heading {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: clamp(25px, 2.7vw, 45px);
+      font-weight: 700;
+      line-height: 0.98;
+      letter-spacing: -0.065em;
+      color: #000000;
+    }
+
+    .civil-ethics-heading-mask {
+      display: block;
+      overflow: hidden;
+      padding-bottom: 0.08em;
+    }
+
+    .civil-ethics-heading-line {
+      display: block;
+      transform: translateY(115%);
+      animation: headingSlideUp 900ms cubic-bezier(0.16, 1, 0.3, 1) 810ms forwards;
+    }
+
+    @keyframes headingSlideUp {
+      from {
+        transform: translateY(115%);
+      }
+      to {
+        transform: translateY(0);
+      }
+    }
+
+    .civil-ethics-right-para {
+      max-width: 355px;
+      margin-top: clamp(21px, 5.3vh, 43px);
+      margin-bottom: 0;
+      font-size: clamp(10px, 0.83vw, 13px);
+      font-weight: 400;
+      line-height: 1.43;
+      letter-spacing: -0.025em;
+      color: #050505;
+      opacity: 0;
+      transform: translateY(14px);
+      animation: paraFadeInUp 800ms cubic-bezier(0.16, 1, 0.3, 1) 960ms forwards;
+    }
+
+    @keyframes paraFadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(14px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* 5. Bottom Right Index */
+    .civil-ethics-index {
+      position: absolute;
+      right: 2.3%;
+      bottom: 3%;
+      z-index: 4;
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      color: rgba(0, 0, 0, 0.43);
+      font-size: 9px;
+      font-weight: 500;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      opacity: 0;
+      transform: translateY(18px);
+      animation: indexFadeInUp 700ms cubic-bezier(0.16, 1, 0.3, 1) 1.15s forwards;
+      user-select: none;
+    }
+
+    .civil-ethics-index-line {
+      width: 28px;
+      height: 1px;
+      background-color: currentColor;
+      display: inline-block;
+    }
+
+    .civil-ethics-index-text {
+      display: inline-block;
+      line-height: 1;
+    }
+
+    @keyframes indexFadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(18px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Tablet Layout (<= 900px) */
+    @media (max-width: 900px) {
+      .civil-ethics-hero {
+        height: auto;
+        min-height: 100svh;
+        padding: 28px 24px 52px;
+        overflow: visible;
+      }
+
+      .civil-ethics-title {
+        position: relative;
+        top: auto;
+        left: auto;
+        font-size: clamp(72px, 15vw, 124px);
+        line-height: 0.78;
+      }
+
+      .civil-ethics-main-figure {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 68%;
+        height: 390px;
+        min-height: 0;
+        margin-top: 22px;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .civil-ethics-left-text {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 31%;
+        margin-top: -250px;
+        padding-right: 20px;
+      }
+
+      .civil-ethics-left-label {
+        margin-bottom: 52px;
+      }
+
+      .civil-ethics-right-panel {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 56%;
+        max-width: none;
+        margin-top: 160px;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .civil-ethics-small-figure {
+        height: 210px;
+      }
+
+      .civil-ethics-index {
+        display: none !important;
+      }
+    }
+
+    /* Mobile Layout (<= 620px) */
+    @media (max-width: 620px) {
+      .civil-ethics-hero {
+        padding: 22px 16px 44px;
+      }
+
+      .civil-ethics-title {
+        font-size: clamp(62px, 21vw, 96px);
+        letter-spacing: -0.085em;
+      }
+
+      .civil-ethics-main-figure {
+        width: 100%;
+        height: min(70vw, 330px);
+        margin-top: 24px;
+        border-radius: 27px;
+        margin-left: 0;
+        clip-path: inset(0 100% 0 0 round 27px);
+      }
+
+      @keyframes revealFromLeft {
+        from { clip-path: inset(0 100% 0 0 round 27px); }
+        to { clip-path: inset(0 0 0 0 round 27px); }
+      }
+
+      .civil-ethics-left-text {
+        width: 100%;
+        margin-top: 29px;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 1.25fr;
+        gap: 28px;
+      }
+
+      .civil-ethics-left-label {
+        margin-bottom: 0;
+        font-size: 11px;
+        line-height: 1.48;
+      }
+
+      .civil-ethics-left-desc {
+        font-size: 11px;
+        line-height: 1.48;
+      }
+
+      .civil-ethics-right-panel {
+        width: 100%;
+        margin-top: 58px;
+        margin-left: 0;
+      }
+
+      .civil-ethics-small-figure {
+        height: min(51vw, 245px);
+        border-radius: 27px;
+        clip-path: inset(0 0 0 100% round 27px);
+      }
+
+      @keyframes revealFromRight {
+        from { clip-path: inset(0 0 0 100% round 27px); }
+        to { clip-path: inset(0 0 0 0 round 27px); }
+      }
+
+      .civil-ethics-right-content {
+        padding-top: 25px;
+      }
+
+      .civil-ethics-right-heading {
+        font-size: clamp(34px, 10vw, 53px);
+      }
+
+      .civil-ethics-right-para {
+        max-width: 88%;
+        margin-top: 25px;
+        font-size: 11px;
+        line-height: 1.48;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========================================================================== 
+       PREMIUM NAVIGATION BAR
+       ========================================================================== -->
+  <nav class="civic-navbar" id="civicNavbar" role="navigation" aria-label="Əsas naviqasiya">
+    <div class="civic-navbar-inner">
+      <a class="civic-navbar-logo" id="navLogoBtn" href="#" aria-label="Ana səhifə">
+        <span class="civic-navbar-logo-title">DÖVLƏT ETİKASI</span>
+        <span class="civic-navbar-logo-sub">Maarifləndirici Portal</span>
+      </a>
+
+      <ul class="civic-navbar-links" id="navLinks" role="list">
+        <li><a id="nav-home" class="active" href="#" data-page="home">Ana səhifə</a></li>
+        <li><a id="nav-prinsiplər" href="#" data-page="prinsiplər">Etik prinsiplər</a></li>
+        <li><a id="nav-nezaret" href="#" data-page="nezaret">Etik nəzarət</a></li>
+        <li><a id="nav-qanun" href="#" data-page="qanun">Qanunvericilik</a></li>
+        <li><a id="nav-test" href="#" data-page="test">İnteraktiv test</a></li>
+        <li><a id="nav-resurslar" href="#" class="civic-navbar-cta" data-page="resurslar">Resurslar</a></li>
+      </ul>
+
+      <button class="civic-navbar-hamburger" id="navHamburger" aria-label="Menyu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Spacer so hero isn't hidden behind fixed navbar -->
+  <div class="civic-navbar-spacer" aria-hidden="true"></div>
+
+  <!-- ============================================================
+       PAGE: HOME (existing content wrapped)
+       ============================================================ -->
+  <div class="spa-page" id="page-home">
+
+  <!-- ==========================================================================
+       SECTION 01: UNTOUCHED KEXSIO HERO SECTION
+       ========================================================================== -->
+  <main class="civil-ethics-hero" id="heroSection">
+    <h1 class="civil-ethics-title" aria-label="Dövlət Etikası">
+      <span class="civil-ethics-title-mask">
+        <span class="civil-ethics-title-word line-1">DÖVLƏT</span>
+      </span>
+      <span class="civil-ethics-title-mask">
+        <span class="civil-ethics-title-word line-2">ETİKASI</span>
+      </span>
+    </h1>
+
+    <figure class="civil-ethics-main-figure">
+      <img
+        id="mainImg"
+        src="./public/images/government-building.jpg"
+        alt="Dövlət qulluqçularının peşəkar və etik əməkdaşlığı"
+        class="civil-ethics-main-img"
+      />
+      <div class="civil-ethics-overlay" aria-hidden="true"></div>
+    </figure>
+
+    <div class="civil-ethics-left-text">
+      <p class="civil-ethics-left-label">
+        Dövlət qulluğunda etik davranış prinsipləri
+      </p>
+      <p class="civil-ethics-left-desc">
+        <span class="civil-ethics-bold-prefix">Etik davranış:</span> Dürüstlük, qərəzsizlik və məsuliyyət dövlət qulluğunda ictimai etimadın əsasını təşkil edir.
+      </p>
+    </div>
+
+    <aside class="civil-ethics-right-panel">
+      <figure class="civil-ethics-small-figure">
+        <img
+          id="smallImg"
+          src="./public/images/asan-service.jpg"
+          alt="Dövlət orqanlarında şəffaflıq və qarşılıqlı etimad"
+          class="civil-ethics-small-img"
+        />
+        <div class="civil-ethics-overlay" aria-hidden="true"></div>
+      </figure>
+
+      <div class="civil-ethics-right-content">
+        <h2 class="civil-ethics-right-heading" aria-label="Şəffaflıq və İctimai Etimad">
+          <span class="civil-ethics-heading-mask">
+            <span class="civil-ethics-heading-line">Şəffaflıq və</span>
+          </span>
+          <span class="civil-ethics-heading-mask">
+            <span class="civil-ethics-heading-line">İctimai Etimad</span>
+          </span>
+        </h2>
+        <p class="civil-ethics-right-para">
+          Etik davranış qaydaları dövlət qulluqçularının vətəndaşlarla münasibətlərində qanunçuluğun, obyektivliyin və peşəkarlığın qorunmasına xidmət edir.
+        </p>
+      </div>
+    </aside>
+
+    <div class="civil-ethics-index" aria-hidden="true">
+      <span class="civil-ethics-index-line"></span>
+      <span class="civil-ethics-index-text">DÖVLƏT ETİKASI / 01</span>
+    </div>
+  </main>
+
+  <!-- ==========================================================================
+       SECTION 02: ETİK DAVRANIŞ PRİNSİPLƏRİ
+       ========================================================================== -->
+  <section id="etik-prinsipler" class="civic-section civic-principles-section" aria-labelledby="principles-heading">
+    <div class="civic-container">
+      <div class="civic-section-header">
+        <div class="civic-index-badge">
+          <span class="civic-index-dash"></span>
+          <span>DÖVLƏT ETİKASI / 02</span>
+        </div>
+        <h2 id="principles-heading" class="civic-section-title">DAVRANIŞ PRİNSİPLƏRİ</h2>
+        <p class="civic-section-subtitle">
+          Azərbaycan Respublikasının “Dövlət qulluqçularının etik davranış qaydaları haqqında” Qanunu ilə müəyyən edilmiş 10 fundamental hüquqi və əxlaqi norma
+        </p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="civic-filter-bar" role="tablist">
+        <button type="button" class="civic-filter-btn active" data-cat="all">Bütün Prinsiplər (10)</button>
+        <button type="button" class="civic-filter-btn" data-cat="vetendash">Vətəndaş Münasibətləri</button>
+        <button type="button" class="civic-filter-btn" data-cat="xidmet">Xidməti Fəaliyyət</button>
+        <button type="button" class="civic-filter-btn" data-cat="durustluk">Dürüstlük və Şəffaflıq</button>
+      </div>
+
+      <!-- Principles Cards Grid -->
+      <div class="civic-principles-grid" id="principlesGrid">
+        <!-- Rendered via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Deep-Dive Modal for Principles -->
+  <div id="principleModal" class="civic-modal-backdrop" style="display: none;" role="dialog" aria-modal="true">
+    <div class="civic-modal-dialog">
+      <div class="civic-modal-header">
+        <div>
+          <span id="modalSub" class="civic-modal-sub">MADDƏ 5</span>
+          <h3 id="modalTitle" class="civic-modal-title">Qanunçuluq</h3>
+        </div>
+        <button type="button" class="civic-modal-close" id="modalCloseBtn" aria-label="Bağla">✕</button>
+      </div>
+      <div class="civic-modal-body">
+        <div class="civic-modal-block">
+          <h4 class="civic-block-title">Qanunun Tələbi</h4>
+          <p id="modalLaw" class="civic-block-text"></p>
+        </div>
+        <div class="civic-modal-block highlight">
+          <h4 class="civic-block-title">Praktik Dövlət Qulluğu Qaydası</h4>
+          <p id="modalRule" class="civic-block-text"></p>
+        </div>
+      </div>
+      <div class="civic-modal-footer">
+        <span class="civic-modal-note">Mənbə: AR Qanunu № 352-IIIQ</span>
+        <button type="button" class="civic-btn-primary" id="modalOkBtn">Anladım</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       SECTION 03: ETİK NƏZARƏT VƏ ETİK MÜVƏKKİLLƏR
+       ========================================================================== -->
+  <section id="etik-nezaret" class="civic-section civic-oversight-section" aria-labelledby="oversight-heading">
+    <div class="civic-container">
+      <div class="civic-section-header">
+        <div class="civic-index-badge">
+          <span class="civic-index-dash"></span>
+          <span>DÖVLƏT ETİKASI / 03</span>
+        </div>
+        <h2 id="oversight-heading" class="civic-section-title">ETİK NƏZARƏT VƏ ETİK MÜVƏKKİLLƏR</h2>
+        <p class="civic-section-subtitle">
+          Dövlət orqanında daxili nəzarət mexanizmi, rəhbərin səlahiyyətləri və müstəqil etik müvəkkil institutu
+        </p>
+      </div>
+
+      <div class="civic-oversight-pillars">
+        <div class="civic-pillar-card leader-card">
+          <div class="civic-pillar-badge">Ümumi Rəhbərlik</div>
+          <h3 class="civic-pillar-title">Dövlət Orqanının Rəhbəri</h3>
+          <p class="civic-pillar-desc">
+            Dövlət orqanında etik davranış qaydalarının tətbiqinə, xidməti intizama və daxili mühitin təmizliyinə birbaşa cavabdehdir.
+          </p>
+          <ul class="civic-pillar-list">
+            <li>Etik davranış qaydalarının pozulması faktları üzrə xidməti yoxlama təyin edir</li>
+            <li>Dövlət orqanında müstəqil etik müvəkkili təyin edir və şərait yaradır</li>
+            <li>Təsdiq olunmuş pozuntular üzrə intizam tənbehi tədbirləri tətbiq edir</li>
+            <li>İllik etik vəziyyət barədə hesabatlılığı təmin edir</li>
+          </ul>
+        </div>
+
+        <div class="civic-pillar-card commissioner-card">
+          <div class="civic-pillar-badge commissioner-badge">Məsləhət və Monitorinq</div>
+          <h3 class="civic-pillar-title">Etik Müvəkkil İnstitutu</h3>
+          <p class="civic-pillar-desc">
+            Dövlət qulluqçuları və vətəndaşlar üçün müstəqil, qərəzsiz və konfidensial hüquqi-etik bələdçi funksiyasını daşıyır.
+          </p>
+          <ul class="civic-pillar-list">
+            <li>Qulluqçulara maraqların toqquşması və hədiyyələr üzrə fərdi məsləhətlər verir</li>
+            <li>Etik qaydaların pozulması ilə bağlı şikayət və müraciətləri ilkin olaraq araşdırır</li>
+            <li>Kollektivdə etik maarifləndirmə və antikorrupsiya təlimlərini təşkil edir</li>
+            <li>Rəhbərliyə etik risklərin aradan qaldırılması üçün rüblük və illik təkliflər təqdim edir</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 4-Stage Pipeline -->
+      <div class="civic-pipeline-container">
+        <div class="civic-pipeline-header">
+          <h3 class="civic-pipeline-title">Etik Nəzarətin 4 Mərhələli Hüquqi Dövrü</h3>
+          <span class="civic-pipeline-note">Mərhələləri seçərək hüquqi tələbləri nəzərdən keçirin</span>
+        </div>
+
+        <div class="civic-step-tabs" id="pipelineTabs" role="tablist">
+          <!-- Rendered via JS -->
+        </div>
+
+        <div class="civic-stage-content" id="pipelineContent">
+          <!-- Rendered via JS -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 04: VƏTƏNDAŞ MÜRACİƏTLƏRİ VƏ ŞİKAYƏTLƏRİ
+       ========================================================================== -->
+  <section id="vetendas-muracietleri" class="civic-section civic-complaints-section" aria-labelledby="complaints-heading">
+    <div class="civic-container">
+      <div class="civic-section-header">
+        <div class="civic-index-badge">
+          <span class="civic-index-dash"></span>
+          <span>DÖVLƏT ETİKASI / 04</span>
+        </div>
+        <h2 id="complaints-heading" class="civic-section-title">VƏTƏNDAŞ MÜRACİƏTLƏRİ VƏ ŞİKAYƏTLƏRİ</h2>
+        <p class="civic-section-subtitle">
+          Dövlət qulluqçularının etik qaydaları pozması barədə vətəndaşların şikayət hüququ, qanuni baxılma müddətləri və dövlət zəmanətləri
+        </p>
+      </div>
+
+      <div class="civic-tab-group" id="complaintsTabNav">
+        <button type="button" class="civic-tab-btn active" data-tab="muddet">Baxılma Müddətləri</button>
+        <button type="button" class="civic-tab-btn" data-tab="qaydalar">Şikayətin Tərtibi Qaydası</button>
+        <button type="button" class="civic-tab-btn" data-tab="teminatlar">Hüquqi Zəmanətlər və Təqib Qadağası</button>
+      </div>
+
+      <div id="complaintsTabContent">
+        <!-- Rendered via JS based on selected tab -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 05: DÖVLƏT ORQANLARININ SAYT ANALİZİ
+       ========================================================================== -->
+  <section id="sayt-analizi" class="civic-section civic-analysis-section" aria-labelledby="analysis-heading">
+    <div class="civic-container">
+      <div class="civic-section-header">
+        <div class="civic-index-badge">
+          <span class="civic-index-dash"></span>
+          <span>DÖVLƏT ETİKASI / 05</span>
+        </div>
+        <h2 id="analysis-heading" class="civic-section-title">DÖVLƏT ORQANLARININ SAYT ANALİZİ</h2>
+        <p class="civic-section-subtitle">
+          Rəsmi internet resurslarında etik infrastrukturun, etik müvəkkil məlumatlarının və şəffaflıq meyarlarının qiymətləndirilməsi
+        </p>
+      </div>
+
+      <div class="civic-audit-layout">
+        <div class="civic-audit-checklist">
+          <h3 class="civic-audit-list-title">Etik Şəffaflıq üzrə 5 Qiymətləndirmə Meyarı</h3>
+          <p class="civic-audit-list-sub">
+            Saytda mövcud olan elementləri işarələyərək Rəqəmsal Şəffaflıq İndeksini hesablayın:
+          </p>
+          <div class="civic-checklist-items" id="auditItemsContainer">
+            <!-- Rendered via JS -->
+          </div>
+        </div>
+
+        <div class="civic-audit-scoreboard">
+          <div class="civic-score-card">
+            <span class="civic-score-tag">RƏQƏMSAL ETİKA İNDEKSİ</span>
+            <div class="civic-score-circle">
+              <span class="civic-score-number" id="auditScoreNum">60%</span>
+              <span class="civic-score-max">/ 100%</span>
+            </div>
+            <div class="civic-score-status" id="auditStatusBox">
+              <strong id="auditStatusGrade">Orta Şəffaflıq</strong>
+              <p id="auditStatusNote">Əsas elementlər mövcuddur, lakin etik müvəkkil və hesabatlılıq sahəsində təkmilləşdirmə zəruridir.</p>
+            </div>
+            <div class="civic-score-breakdown">
+              <h4 class="civic-breakdown-title">Audit Meyarlarının İcrası:</h4>
+              <div class="civic-progress-bar-bg">
+                <div class="civic-progress-bar-fill" id="auditProgressBar" style="width: 60%; background-color: #f59e0b;"></div>
+              </div>
+              <div class="civic-breakdown-stats">
+                <span>Aktiv göstəricilər:</span>
+                <strong id="auditCriteriaCount">3 / 5</strong>
+              </div>
+            </div>
+            <div class="civic-score-advice">
+              <p>* Bu qiymətləndirmə modeli AR “Dövlət qulluqçularının etik davranış qaydaları haqqında” Qanununun 20-ci və 21-ci maddələri əsasında hazırlanmışdır.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 06: QANUNVERİCİLİK BAZASI
+       ========================================================================== -->
+  <section id="qanunvericilik" class="civic-section civic-legislation-section" aria-labelledby="legislation-heading">
+    <div class="civic-container">
+      <div class="civic-section-header">
+        <div class="civic-index-badge">
+          <span class="civic-index-dash"></span>
+          <span>DÖVLƏT ETİKASI / 06</span>
+        </div>
+        <h2 id="legislation-heading" class="civic-section-title">QANUNVERİCİLİK BAZASI</h2>
+        <p class="civic-section-subtitle">
+          Azərbaycan Respublikasının dövlət idarəçiliyində etik davranış və antikorrupsiya standartlarını formalaşdıran qanunvericilik aktları
+        </p>
+      </div>
+
+      <div class="civic-law-selectors" id="lawsNav">
+        <!-- Rendered via JS -->
+      </div>
+
+      <div class="civic-law-detail-card" id="lawDetailCard">
+        <!-- Rendered via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 07: İNTERAKTİV ETİK DİLEMMA TESTİ
+       ========================================================================== -->
+  <section id="etik-dilemma-testi" class="civic-section civic-quiz-section" aria-labelledby="quiz-heading">
+    <div class="civic-container">
+      <div class="civic-section-header">
+        <div class="civic-index-badge">
+          <span class="civic-index-dash"></span>
+          <span>DÖVLƏT ETİKASI / 07</span>
+        </div>
+        <h2 id="quiz-heading" class="civic-section-title">İNTERAKTİV ETİK DİLEMMA TESTİ</h2>
+        <p class="civic-section-subtitle">
+          Dövlət qulluğunda real həyati kazuslar və qanunvericilik əsasında qərar qəbulu simulyasiyası
+        </p>
+      </div>
+
+      <div id="quizContainer">
+        <!-- Rendered via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 08: RƏSMİ İSTİNADLAR VƏ FOOTER
+       ========================================================================== -->
+  <footer id="istinadlar" class="civic-footer" aria-labelledby="footer-heading">
+    <div class="civic-container">
+      <div class="civic-footer-header">
+        <div class="civic-index-badge light">
+          <span class="civic-index-dash"></span>
+          <span>DÖVLƏT ETİKASI / 08</span>
+        </div>
+        <h2 id="footer-heading" class="civic-footer-title">RƏSMİ İSTİNADLAR VƏ HÜQUQİ RESURSLAR</h2>
+        <p class="civic-footer-subtitle">
+          Azərbaycan Respublikasında dövlət qulluğu, etik nəzarət və antikorrupsiya siyasətini tənzimləyən rəsmi dövlət orqanları və informasiya sistemləri
+        </p>
+      </div>
+
+      <div class="civic-references-grid">
+        <a href="https://dim.gov.az" target="_blank" rel="noopener noreferrer" class="civic-ref-card">
+          <span class="civic-ref-code">01 / DİM</span>
+          <h3 class="civic-ref-name">Dövlət İmtahan Mərkəzi</h3>
+          <p class="civic-ref-desc">
+            Dövlət qulluğuna qəbul, qulluqçuların etik davranış üzrə təlimləri və dövlət orqanlarının etik hesabatlarının illik təhlili.
+          </p>
+          <span class="civic-ref-link">dim.gov.az ↗</span>
+        </a>
+
+        <a href="https://antikorrupsiya.gov.az" target="_blank" rel="noopener noreferrer" class="civic-ref-card">
+          <span class="civic-ref-code">02 / KOMİSSİYA</span>
+          <h3 class="civic-ref-name">Korrupsiyaya qarşı Mübarizə üzrə Komissiya</h3>
+          <p class="civic-ref-desc">
+            Dövlət orqanlarında etik davranış və antikorrupsiya standartlarının tətbiqinə ümumi nəzarət və hesabatların monitorinqi.
+          </p>
+          <span class="civic-ref-link">antikorrupsiya.gov.az ↗</span>
+        </a>
+
+        <a href="https://e-qanun.az" target="_blank" rel="noopener noreferrer" class="civic-ref-card">
+          <span class="civic-ref-code">03 / E-QANUN</span>
+          <h3 class="civic-ref-name">Hüquqi Aktların Vahid Elektron Bazası</h3>
+          <p class="civic-ref-desc">
+            Ədliyyə Nazirliyinin rəsmi portalı: “Dövlət qulluqçularının etik davranış qaydaları haqqında” Qanunun və bütün qanunların tam mətni.
+          </p>
+          <span class="civic-ref-link">e-qanun.az ↗</span>
+        </a>
+
+        <a href="https://genprosecutor.gov.az" target="_blank" rel="noopener noreferrer" class="civic-ref-card">
+          <span class="civic-ref-code">04 / PROKURORLUQ</span>
+          <h3 class="civic-ref-name">Baş İdarə — “161” Qaynar Xətt</h3>
+          <p class="civic-ref-desc">
+            Baş Prokurorluq yanında Korrupsiyaya qarşı Mübarizə Baş İdarəsinin 24/7 rejimdə fəaliyyət göstərən etimad və əlaqə mərkəzi.
+          </p>
+          <span class="civic-ref-link">genprosecutor.gov.az ↗</span>
+        </a>
+      </div>
+
+      <nav class="civic-footer-nav" aria-label="Sayt bölmələri">
+        <ul class="civic-footer-links">
+          <li><a href="#heroSection">01 Əsas</a></li>
+          <li><a href="#etik-prinsipler">02 Prinsiplər</a></li>
+          <li><a href="#etik-nezaret">03 Nəzarət</a></li>
+          <li><a href="#vetendas-muracietleri">04 Müraciətlər</a></li>
+          <li><a href="#sayt-analizi">05 Sayt Analizi</a></li>
+          <li><a href="#qanunvericilik">06 Qanunvericilik</a></li>
+          <li><a href="#etik-dilemma-testi">07 Dilemma Testi</a></li>
+          <li><a href="#istinadlar">08 İstinadlar</a></li>
+        </ul>
+
+        <button type="button" class="civic-back-to-top" id="backToTopBtn" aria-label="Səhifənin əvvəlinə qayıt">
+          Yuxarı Qayıt ↑
+        </button>
+      </nav>
+
+      <div class="civic-footer-bottom">
+        <div class="civic-disclaimer-box">
+          <strong>MÜSTƏQİL MAARİFLƏNDİRMƏ VƏ TƏHSİL LAYİHƏSİ:</strong>
+          <p>
+            Bu internet səhifəsi Azərbaycan Respublikasının dövlət idarəçiliyində etik davranış standartlarının və hüquqi maarifləndirmənin təşviqi məqsədilə hazırlanmış müstəqil təhsil resursudur. Layihə rəsmi dövlət orqanı və ya dövlət portalı deyildir. Bütün məlumatlar AR Konstitusiyası və “Dövlət qulluqçularının etik davranış qaydaları haqqında” AR Qanununun rəsmi müddəaları əsasında tərtib edilmişdir.
+          </p>
+        </div>
+        <div class="civic-copyright-bar">
+          <span>DÖVLƏT QULLUĞUNDA ETİK DAVRANIŞ © 2026</span>
+          <span>MÜSTƏQİL TƏHSİL PORTALI</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  </div><!-- /page-home -->
+
+  <!-- ============================================================
+       PAGE: ETİK PRİNSİPLƏR
+       ============================================================ -->
+  <div class="spa-page hidden" id="page-prinsiplər">
+
+    <!-- Hero Banner -->
+    <div class="page-hero-banner" role="banner">
+      <img src="./public/images/ethics-pillars.jpg" alt="Etik davranış prinsiplərinin rəmzi təsviri" class="page-hero-img" loading="lazy">
+      <div class="page-hero-content">
+        <span class="page-hero-badge">— Dövlət Etikası / 02</span>
+        <h1 class="page-hero-title">Etik<br>Prinsiplər</h1>
+        <p class="page-hero-desc">Azərbaycan Respublikasının "Dövlət qulluqçularının etik davranış qaydaları haqqında" Qanunu ilə müəyyən edilmiş 10 fundamental hüquqi norma — ətraflı izahat və praktik nümunələrlə.</p>
+      </div>
+    </div>
+
+    <!-- Principles Detail Grid -->
+    <section class="civic-section" aria-labelledby="pp-heading">
+      <div class="civic-container">
+        <div class="civic-section-header">
+          <div class="civic-index-badge">
+            <span class="civic-index-dash"></span>
+            <span>HÜQUQI ƏSASLAR</span>
+          </div>
+          <h2 id="pp-heading" class="civic-section-title">10 ƏSAS PRINSIP</h2>
+          <p class="civic-section-subtitle">Hər bir prinsip maddə istinadı, qısaldılmış qanun tələbi və praktik iş nümunəsi ilə birlikdə təqdim edilir.</p>
+        </div>
+
+        <div class="pp-detail-grid">
+
+          <article class="pp-detail-card" tabindex="0">
+            <div class="pp-card-accent"></div>
+            <div class="pp-card-body">
+              <div class="pp-card-number">01</div>
+              <span class="pp-card-article">Maddə 5</span>
+              <h3 class="pp-card-title">Qanunçuluq</h3>
+              <p class="pp-card-summary">Dövlət qulluqçusu öz vəzifə səlahiyyətlərini icra edərkən Azərbaycan Respublikasının Konstitusiyasına, qanunlarına və tərəfdar çıxdığı beynəlxalq müqavilələrə dönmədən əməl etməlidir. Qanunun aliliyi xidmətin əsasıdır.</p>
+              <div class="pp-card-rule">
+                <span class="pp-card-rule-label">Praktik Nümunə</span>
+                Rəhbərin qanuna zidd şifahi sərəncamı daxil olduqda, dövlət qulluqçusu yazılı təsdiq tələb etməli və hüquqa zidd əmələ şərik olmamalıdır.
+              </div>
+            </div>
+          </article>
+
+          <article class="pp-detail-card" tabindex="0">
+            <div class="pp-card-accent"></div>
+            <div class="pp-card-body">
+              <div class="pp-card-number">02</div>
+              <span class="pp-card-article">Maddə 6</span>
+              <h3 class="pp-card-title">İctimai etimad</h3>
+              <p class="pp-card-summary">Dövlət orqanının nüfuzunu möhkəmləndirməyə, vətəndaşların dövlətə olan inamını qorumağa xidmət edir. Həm xidməti, həm şəxsi davranışda etimad mühümdür.</p>
+              <div class="pp-card-rule">
+                <span class="pp-card-rule-label">Praktik Nümunə</span>
+                Şəxsi həyatda və ictimai məkanlarda dövlət orqanının nüfuzuna xələl gətirə biləcək nalayiq hərəkətlərə yol verilməməlidir.
+              </div>
+            </div>
+          </article>
+
+          <article class="pp-detail-card" tabindex="0">
+            <div class="pp-card-accent"></div>
+            <div class="pp-card-body">
+              <div class="pp-card-number">03</div>
+              <span class="pp-card-article">Maddə 8</span>
+              <h3 class="pp-card-title">Vicdanlı davranış</h3>
+              <p class="pp-card-summary">Şəxsi və ya korporativ maraqlardan asılı olmayaraq, ictimai maraqlar naminə vəzifələri keyfiyyətlə yerinə yetirmək. Peşəkarlıq borcdur.</p>
+              <div class="pp-card-rule">
+                <span class="pp-card-rule-label">Praktik Nümunə</span>
+                Vətəndaş müraciətlərini süründürməçiliyə salmamaq, bürokratik maneələr yaratmamaq.
+              </div>
+            </div>
+          </article>
+
+          <article class="pp-detail-card" tabindex="0">
+            <div class="pp-card-accent"></div>
+            <div class="pp-card-body">
+              <div class="pp-card-number">04</div>
+              <span class="pp-card-article">Maddə 9</span>
+              <h3 class="pp-card-title">Loyallıq</h3>
+              <p class="pp-card-summary">Dövlət orqanlarının fəaliyyəti barədə ictimai çıxışlarda, KİV-də və sosial şəbəkələrdə əsassız tənqidi mülahizələrdən çəkinmək.</p>
+              <div class="pp-card-rule">
+                <span class="pp-card-rule-label">Praktik Nümunə</span>
+                Sosial mediada xidmət etdiyi orqanın siyasətinə zidd olan bəyanatlar yaymamaq.
+              </div>
+            </div>
+          </article>
+
+          <article class="pp-detail-card" tabindex="0">
+            <div class="pp-card-accent"></div>
+            <div class="pp-card-body">
+              <div class="pp-card-number">05</div>
+              <span class="pp-card-article">Maddə 10</span>
+              <h3 class="pp-card-title">Qərəzsizlik</h3>
+              <p class="pp-card-summary">İrqindən, etnik mənsubiyyətindən, dinindən, cinsindən asılı olmayaraq bütün vətəndaşlara bərabər yanaşmaq. Siyasi təsirə tabe olmamaq.</p>
+              <div class="pp-card-rule">
+                <span class="pp-card-rule-label">Praktik Nümunə</span>
+                Xidməti qərarlarda şəxsi rəğbət yox, yalnız obyektiv sübutlar əsas götürülməlidir.
+              </div>
+            </div>
+          </article>
+
+          <article class="pp-detail-card" tabindex="0">
+            <div class="pp-card-accent"></div>
+            <div class="pp-card-body">
+              <div class="pp-card-number">06</div>
+              <span class="pp-card-article">Maddə 11</span>
+              <h3 class="pp-card-title">Korrupsiyanın qarşısının alınması</h3>
+              <p class="pp-card-summary">Qanunsuz maddi nemətlər, imtiyazlar tələb etmək, qəbul etmək qəti qadağandır. Dövlət qulluqçusu dürüstlüyün nümunəsidir.</p>
+              <div class="pp-card-rule">
+                <span class="pp-card-rule-label">Praktik Nümunə</span>
+                Ona təklif olunan qanunsuz ödəniş və ya hədiyyədən imtina etməli və rəhbərliyə yazılı məruzə etməlidir.
+              </div>
+            </div>
+          </article>
+
+          <article class="pp-detail-card" tabindex="0">
+            <div class="pp-card-accent"></div>
+            <div class="pp-card-body">
+              <div class="pp-card-number">07</div>
+              <span class="pp-card-article">Maddə 12</span>
+              <h3 class="pp-card-title">Hədiyyə alma məhdudiyyətləri</h3>
+              <p class="pp-card-summary">Protokol tədbirlərindəki hədiyyələrin dəyəri 55 manatdan artıq olduqda dövlət orqanının balansına təhvil verilməlidir.</p>
+              <div class="pp-card-rule">
+                <span class="pp-card-rule-label">Praktik Nümunə</span>
+                Beynəlxalq protokol qaydasında verilən suvenirlər aktlaşdırılır və müvafiq orqanın mülkiyyətinə keçirilir.
+              </div>
+            </div>
+          </article>
+
+          <article class="pp-detail-card" tabindex="0">
+            <div class="pp-card-accent"></div>
+            <div class="pp-card-body">
+              <div class="pp-card-number">08</div>
+              <span class="pp-card-article">Maddə 13</span>
+              <h3 class="pp-card-title">Maraqların toqquşmasının qarşısı</h3>
+              <p class="pp-card-summary">Xidməti vəzifələr ilə şəxsi maraqların kəsişdiyi hallarda dərhal rəhbərliyə məlumat verilməlidir.</p>
+              <div class="pp-card-rule">
+                <span class="pp-card-rule-label">Praktik Nümunə</span>
+                Tender komissiyasında yaxın qohumun iştirakı aşkarlandıqda özünə etiraz edərək prosesdən çəkilmək.
+              </div>
+            </div>
+          </article>
+
+          <article class="pp-detail-card" tabindex="0">
+            <div class="pp-card-accent"></div>
+            <div class="pp-card-body">
+              <div class="pp-card-number">09</div>
+              <span class="pp-card-article">Maddə 14</span>
+              <h3 class="pp-card-title">Dövlət əmlakından istifadə</h3>
+              <p class="pp-card-summary">Dövlət mülkiyyətindəki avadanlıq, nəqliyyat və digər resurslardan yalnız xidməti məqsədlər üçün qənaətlə istifadə edilməlidir.</p>
+              <div class="pp-card-rule">
+                <span class="pp-card-rule-label">Praktik Nümunə</span>
+                Xidməti avtomobillərin, kompüter texnikasının qulluqdan kənar məqsədlər üçün istifadə edilməməsi.
+              </div>
+            </div>
+          </article>
+
+          <article class="pp-detail-card" tabindex="0">
+            <div class="pp-card-accent"></div>
+            <div class="pp-card-body">
+              <div class="pp-card-number">10</div>
+              <span class="pp-card-article">Maddə 15</span>
+              <h3 class="pp-card-title">Məlumatların qorunması</h3>
+              <p class="pp-card-summary">Xidmət zamanı əldə edilmiş konfidensial məlumatların, vətəndaşların fərdi məlumatlarının yayılması qadağandır.</p>
+              <div class="pp-card-rule">
+                <span class="pp-card-rule-label">Praktik Nümunə</span>
+                Vətəndaşların qeydiyyat, səhhət və əmlak məlumatlarını üçüncü tərəflərlə paylaşmamaq.
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </div><!-- /page-prinsiplər -->
+
+  <!-- ============================================================
+       PAGE: ETİK NƏZARƏT
+       ============================================================ -->
+  <div class="spa-page hidden" id="page-nezaret">
+
+    <div class="page-hero-banner" role="banner">
+      <img src="./public/images/government-building.jpg" alt="Dövlət orqanının binası — etik nəzarətin rəmzi" class="page-hero-img" loading="lazy">
+      <div class="page-hero-content">
+        <span class="page-hero-badge">— Dövlət Etikası / 03</span>
+        <h1 class="page-hero-title">Etik<br>Nəzarət</h1>
+        <p class="page-hero-desc">Dövlət orqanında daxili nəzarət mexanizmi, etik müvəkkil institutu, məsuliyyət zənciri və ictimai etimad standartları.</p>
+      </div>
+    </div>
+
+    <section class="civic-section" aria-labelledby="nezaret-heading">
+      <div class="civic-container">
+        <div class="civic-section-header">
+          <div class="civic-index-badge">
+            <span class="civic-index-dash"></span>
+            <span>NƏZARƏT MEXANİZMİ</span>
+          </div>
+          <h2 id="nezaret-heading" class="civic-section-title">NƏZARƏT STRUKTURU</h2>
+          <p class="civic-section-subtitle">Etik davranış qaydalarına uyğunluq dövlət orqanının rəhbərliyi, müstəqil etik müvəkkil institutu və vətəndaş nəzarəti üçlüyü ilə təmin edilir.</p>
+        </div>
+
+        <!-- Interactive Oversight Diagram -->
+        <div class="oversight-diagram">
+          <div class="oversight-nodes" id="oversightNodes">
+            <div class="oversight-node active" data-node="0" role="button" tabindex="0">
+              <span class="oversight-node-num">01 / RƏHBƏR</span>
+              <h3 class="oversight-node-title">Dövlət Orqanının Rəhbəri</h3>
+            </div>
+            <div class="oversight-node" data-node="1" role="button" tabindex="0">
+              <span class="oversight-node-num">02 / MÜVƏKKİL</span>
+              <h3 class="oversight-node-title">Etik Müvəkkil İnstitutu</h3>
+            </div>
+            <div class="oversight-node" data-node="2" role="button" tabindex="0">
+              <span class="oversight-node-num">03 / KOMİSSİYA</span>
+              <h3 class="oversight-node-title">Antikorrupsiya Komissiyası</h3>
+            </div>
+            <div class="oversight-node" data-node="3" role="button" tabindex="0">
+              <span class="oversight-node-num">04 / VƏTƏNDAŞ</span>
+              <h3 class="oversight-node-title">İctimai Nəzarət</h3>
+            </div>
+          </div>
+
+          <div class="oversight-detail" id="oversightDetail">
+            <img src="./public/images/government-building.jpg" alt="Nəzarət strukturu" class="oversight-detail-img" loading="lazy">
+            <span class="oversight-detail-badge" id="oversightBadge">Ümumi Rəhbərlik</span>
+            <h3 class="oversight-detail-title" id="oversightTitle">Dövlət Orqanının Rəhbəri</h3>
+            <p class="oversight-detail-text" id="oversightText">Dövlət orqanında etik davranış qaydalarının tətbiqinə, xidməti intizama və daxili mühitin sağlamlığına birbaşa cavabdehdir. Qanunun tələbi əsasında etik standartların həyata keçirilməsini koordinasiya edir.</p>
+            <ul class="oversight-detail-items" id="oversightItems">
+              <li>Etik davranış qaydalarının pozulması faktları üzrə xidməti yoxlama təyin edir</li>
+              <li>Dövlət orqanında müstəqil etik müvəkkili vəzifəsinə şəxs təyin edir</li>
+              <li>Təsdiq olunmuş pozuntular üzrə intizam tənbehi tədbirləri tətbiq edir</li>
+              <li>İllik etik vəziyyət barədə hesabatlılığı təmin edir</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Accountability Banner -->
+        <div class="accountability-banner">
+          <div class="accountability-text">
+            <h3>İctimai Etimad — Əsas Prioritet</h3>
+            <p>Dövlət qulluğunda etik davranış yalnız qanuni bir öhdəlik deyil, eyni zamanda vətəndaşlarla münasibətdə inam mühitinin yaradılmasının zəruri şərtidir. Şəffaflıq və hesabatlılıq bu etimadın özəyini təşkil edir.</p>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:16px;">
+            <div class="accountability-stat">
+              <span class="accountability-stat-num">10</span>
+              <span class="accountability-stat-label">Etik davranış prinsipi qanunla müəyyən edilib</span>
+            </div>
+            <div class="accountability-stat">
+              <span class="accountability-stat-num">4</span>
+              <span class="accountability-stat-label">Mərhələli hüquqi nəzarət dövrü</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </div><!-- /page-nezaret -->
+
+  <!-- ============================================================
+       PAGE: QANUNVERİCİLİK
+       ============================================================ -->
+  <div class="spa-page hidden" id="page-qanun">
+
+    <div class="page-hero-banner" role="banner">
+      <img src="./public/images/law-book.jpg" alt="Hüquqi kitab — qanunvericilik bazası" class="page-hero-img" loading="lazy">
+      <div class="page-hero-content">
+        <span class="page-hero-badge">— Dövlət Etikası / 06</span>
+        <h1 class="page-hero-title">Qanun&shy;vericilik</h1>
+        <p class="page-hero-desc">Azərbaycan Respublikasında dövlət qulluğu etikasını tənzimləyən əsas hüquqi aktlar — müddəaları, tətbiq sahələri və rəsmi keçidlərlə.</p>
+      </div>
+    </div>
+
+    <section class="civic-section" aria-labelledby="qanun-heading">
+      <div class="civic-container">
+        <div class="civic-section-header">
+          <div class="civic-index-badge">
+            <span class="civic-index-dash"></span>
+            <span>HÜQUQİ ƏSASLAR</span>
+          </div>
+          <h2 id="qanun-heading" class="civic-section-title">HÜQUQİ BAZA</h2>
+          <p class="civic-section-subtitle">Dövlət qulluqçusunun etik öhdəliklərini tənzimləyən qanunlar, fərmanlar və nizamnamələr.</p>
+        </div>
+
+        <div class="law-page-layout">
+          <!-- Sticky Book Visual -->
+          <div class="law-book-visual">
+            <img src="./public/images/law-book.jpg" alt="Azərbaycan Respublikasının qanunlar kitabı" class="law-book-img" loading="lazy">
+            <p class="law-book-caption">AR Dövlət Etika Qanunvericiliyi</p>
+          </div>
+
+          <!-- Accordion Law Cards -->
+          <div class="law-cards-stack" id="lawAccordion">
+
+            <div class="law-card-item" id="lawCard0">
+              <button class="law-card-header-btn" aria-expanded="false" aria-controls="lawBody0">
+                <div class="law-card-header-left">
+                  <span class="law-card-num-label">01 / ANA QANUN</span>
+                  <span class="law-card-name">Etik Davranış Qaydaları Qanunu</span>
+                </div>
+                <span class="law-card-toggle">+</span>
+              </button>
+              <div class="law-card-body" id="lawBody0">
+                <div class="law-card-body-inner">
+                  <p class="law-scope-text">"Dövlət qulluqçularının etik davranış qaydaları haqqında" Azərbaycan Respublikasının Qanunu (№ 352-IIIQ). Dövlət qulluqçularının peşəkar davranışının əsas normalarını, prinsiplərini və məhdudiyyətlərini müəyyən edir.</p>
+                  <div class="law-articles-mini">
+                    <div class="law-article-mini"><span class="law-article-mini-num">Maddə 5</span>Qanunçuluq prinsipi — konstitusiya normalarına tam uyğunluq öhdəliyi</div>
+                    <div class="law-article-mini"><span class="law-article-mini-num">Maddə 10</span>Qərəzsizlik — irq, din, cins, mənşəyə görə ayrı-seçkilik qadağası</div>
+                    <div class="law-article-mini"><span class="law-article-mini-num">Maddə 11</span>Korrupsiyanın qarşısının alınması — qanunsuz ödəniş qəbulunun mütləq qadağası</div>
+                    <div class="law-article-mini"><span class="law-article-mini-num">Maddə 12</span>Hədiyyə alma ilə bağlı məhdudiyyətlər (55 AZN hədd)</div>
+                  </div>
+                  <a href="https://e-qanun.az/framework/24397" target="_blank" rel="noopener noreferrer" class="law-ref-link">e-qanun.az-da tam mətni oxu ↗</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="law-card-item" id="lawCard1">
+              <button class="law-card-header-btn" aria-expanded="false" aria-controls="lawBody1">
+                <div class="law-card-header-left">
+                  <span class="law-card-num-label">02 / ƏSAS QANUN</span>
+                  <span class="law-card-name">Dövlət Qulluğu haqqında Qanun</span>
+                </div>
+                <span class="law-card-toggle">+</span>
+              </button>
+              <div class="law-card-body" id="lawBody1">
+                <div class="law-card-body-inner">
+                  <p class="law-scope-text">Dövlət qulluğunun təşkili, dövlət qulluqçusunun hüquq və vəzifələri, xidmətə qəbul, irəliləyiş və intizam məsuliyyətini müəyyən edən əsas hüquqi akt.</p>
+                  <div class="law-articles-mini">
+                    <div class="law-article-mini"><span class="law-article-mini-num">Maddə 20</span>Dövlət qulluqçusunun əsas vəzifələri</div>
+                    <div class="law-article-mini"><span class="law-article-mini-num">Maddə 25</span>İntizam məsuliyyəti qaydaları</div>
+                    <div class="law-article-mini"><span class="law-article-mini-num">Maddə 28</span>Xidməti məlumatların mühafizəsi öhdəliyi</div>
+                  </div>
+                  <a href="https://e-qanun.az/framework/7893" target="_blank" rel="noopener noreferrer" class="law-ref-link">e-qanun.az-da tam mətni oxu ↗</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="law-card-item" id="lawCard2">
+              <button class="law-card-header-btn" aria-expanded="false" aria-controls="lawBody2">
+                <div class="law-card-header-left">
+                  <span class="law-card-num-label">03 / ANTİKORRUPSİYA</span>
+                  <span class="law-card-name">Korrupsiyaya Qarşı Mübarizə haqqında Qanun</span>
+                </div>
+                <span class="law-card-toggle">+</span>
+              </button>
+              <div class="law-card-body" id="lawBody2">
+                <div class="law-card-body-inner">
+                  <p class="law-scope-text">Azərbaycan Respublikasında korrupsiyaya qarşı mübarizənin hüquqi, təşkilati və iqtisadi əsaslarını müəyyən edir. Etik davranışla birbaşa əlaqəli antikorrupsiya standartlarını müəyyənləşdirir.</p>
+                  <div class="law-articles-mini">
+                    <div class="law-article-mini"><span class="law-article-mini-num">Maddə 2</span>Korrupsiya anlayışı və formaları</div>
+                    <div class="law-article-mini"><span class="law-article-mini-num">Maddə 10</span>Maraqların toqquşmasının qarşısının alınması öhdəliyi</div>
+                    <div class="law-article-mini"><span class="law-article-mini-num">Maddə 15</span>Mülkiyyət bəyannaməsi vermə tələbi</div>
+                  </div>
+                  <a href="https://antikorrupsiya.gov.az" target="_blank" rel="noopener noreferrer" class="law-ref-link">Komissiya saytında ətraflı məlumat ↗</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="law-card-item" id="lawCard3">
+              <button class="law-card-header-btn" aria-expanded="false" aria-controls="lawBody3">
+                <div class="law-card-header-left">
+                  <span class="law-card-num-label">04 / MÜRACIƏTLƏR</span>
+                  <span class="law-card-name">Vətəndaşların Müraciətləri haqqında Qanun</span>
+                </div>
+                <span class="law-card-toggle">+</span>
+              </button>
+              <div class="law-card-body" id="lawBody3">
+                <div class="law-card-body-inner">
+                  <p class="law-scope-text">Vətəndaşların dövlət orqanlarına, bələdiyyələrə, hüquqi şəxslərə müraciətlərinin baxılma qaydası, müddəaları və vətəndaşın bu sahədəki hüquqlarını tənzimləyir.</p>
+                  <div class="law-articles-mini">
+                    <div class="law-article-mini"><span class="law-article-mini-num">Maddə 7</span>15 günlük cavab müddəti (30 günə uzadıla bilər)</div>
+                    <div class="law-article-mini"><span class="law-article-mini-num">Maddə 12</span>Cavabın forma və məzmununa dair tələblər</div>
+                    <div class="law-article-mini"><span class="law-article-mini-num">Maddə 16</span>Müraciətin rədd edilməsinin qanunsuz sayıldığı hallar</div>
+                  </div>
+                  <a href="https://e-qanun.az/framework/26030" target="_blank" rel="noopener noreferrer" class="law-ref-link">e-qanun.az-da tam mətni oxu ↗</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="law-card-item" id="lawCard4">
+              <button class="law-card-header-btn" aria-expanded="false" aria-controls="lawBody4">
+                <div class="law-card-header-left">
+                  <span class="law-card-num-label">05 / KONSTİTUSİYA</span>
+                  <span class="law-card-name">AR Konstitusiyası — Dövlət Qulluğu Müddəaları</span>
+                </div>
+                <span class="law-card-toggle">+</span>
+              </button>
+              <div class="law-card-body" id="lawBody4">
+                <div class="law-card-body-inner">
+                  <p class="law-scope-text">Azərbaycan Respublikasının Konstitusiyası dövlət qulluqçusunun hüquqi statusunun ali hüquqi əsasını təşkil edir. Bütün etik normalar Konstitusiyanın müddəalarına uyğun tənzimlənir.</p>
+                  <div class="law-articles-mini">
+                    <div class="law-article-mini"><span class="law-article-mini-num">Maddə 7</span>Dövlətin əsasları — hakimiyyətin bölünməsi prinsipi</div>
+                    <div class="law-article-mini"><span class="law-article-mini-num">Maddə 55</span>Dövlət qulluqçusu statusunun hüquqi çərçivəsi</div>
+                  </div>
+                  <a href="https://e-qanun.az/framework/897" target="_blank" rel="noopener noreferrer" class="law-ref-link">e-qanun.az-da Konstitusiyanı oxu ↗</a>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- /law-cards-stack -->
+        </div><!-- /law-page-layout -->
+      </div>
+    </section>
+
+  </div><!-- /page-qanun -->
+
+  <!-- ============================================================
+       PAGE: İNTERAKTİV TEST
+       ============================================================ -->
+  <div class="spa-page hidden" id="page-test">
+
+    <div class="page-hero-banner" role="banner">
+      <img src="./public/images/quiz-compass.jpg" alt="Etik qərar vermə kompası" class="page-hero-img" loading="lazy">
+      <div class="page-hero-content">
+        <span class="page-hero-badge">— Dövlət Etikası / 07</span>
+        <h1 class="page-hero-title">İnteraktiv<br>Test</h1>
+        <p class="page-hero-desc">Dövlət qulluğunda real situasiyalar əsasında 10 sual. Hər sualda 4 cavab variantı. Sən necə qərar verərdin?</p>
+      </div>
+    </div>
+
+    <section class="civic-section" aria-labelledby="test-heading">
+      <div class="civic-container">
+        <div class="quiz-page-layout">
+
+          <!-- Visual Column -->
+          <div class="quiz-visual-column">
+            <img src="./public/images/quiz-compass.jpg" alt="Etik qərar kompası" class="quiz-compass-img" loading="lazy">
+            <div class="quiz-intro-text">
+              <h2 class="quiz-intro-title">Sən necə qərar verərdin?</h2>
+              <p class="quiz-intro-subtitle">10 real iş ssenarisinə cavab ver. Hər sualdan sonra qanuni izahat alacaqsan. Test bitdikdə ümumi nəticən göstəriləcək.</p>
+            </div>
+          </div>
+
+          <!-- Quiz Engine -->
+          <div id="quizPageEngine"></div>
+
+        </div>
+      </div>
+    </section>
+
+  </div><!-- /page-test -->
+
+  <!-- ============================================================
+       PAGE: RESURSLAR
+       ============================================================ -->
+  <div class="spa-page hidden" id="page-resurslar">
+
+    <div class="page-hero-banner" role="banner">
+      <img src="./public/images/resources-docs.jpg" alt="Rəsmi sənədlər və hüquqi resurslar" class="page-hero-img" loading="lazy">
+      <div class="page-hero-content">
+        <span class="page-hero-badge">— Dövlət Etikası / 08</span>
+        <h1 class="page-hero-title">Rəsmi<br>Resurslar</h1>
+        <p class="page-hero-desc">Azərbaycanda dövlət qulluğu, etika və antikorrupsiya üzrə rəsmi dövlət portalları, hüquqi bazalar və tədris materialları.</p>
+      </div>
+    </div>
+
+    <section class="civic-section" aria-labelledby="resurslar-heading">
+      <div class="civic-container">
+        <div class="civic-section-header">
+          <div class="civic-index-badge">
+            <span class="civic-index-dash"></span>
+            <span>RƏSMİ İSTİNADLAR</span>
+          </div>
+          <h2 id="resurslar-heading" class="civic-section-title">HÜQUQİ RESURSLAR</h2>
+          <p class="civic-section-subtitle">Azərbaycan Respublikasında dövlət qulluğu etikası, antikorrupsiya və hüquq bazasına aid rəsmi internet resursları.</p>
+        </div>
+
+        <img src="./public/images/resources-docs.jpg" alt="Rəsmi sənədlər" class="resources-docs-visual" loading="lazy">
+
+        <!-- Search + Filter -->
+        <div class="resources-search-bar">
+          <input type="search" class="resources-search-input" id="resSearch" placeholder="Resurs axtar..." aria-label="Resurs axtar">
+          <span class="resources-search-icon" aria-hidden="true">⌕</span>
+        </div>
+
+        <div class="resources-categories" role="group" aria-label="Kateqoriya filteri">
+          <button class="resources-cat-btn active" data-rescat="all" type="button">Hamısı</button>
+          <button class="resources-cat-btn" data-rescat="dovlet" type="button">Dövlət Qulluğu</button>
+          <button class="resources-cat-btn" data-rescat="antikorr" type="button">Antikorrupsiya</button>
+          <button class="resources-cat-btn" data-rescat="huquq" type="button">Hüquq Bazası</button>
+          <button class="resources-cat-btn" data-rescat="tedris" type="button">Tədris</button>
+        </div>
+
+        <div class="resources-grid" id="resourcesGrid">
+
+          <a href="https://dim.gov.az" target="_blank" rel="noopener noreferrer" class="resource-card" data-rescat="dovlet">
+            <div class="resource-card-icon">🏛️</div>
+            <span class="resource-card-cat">Dövlət Qulluğu</span>
+            <h3 class="resource-card-title">Dövlət İmtahan Mərkəzi</h3>
+            <p class="resource-card-desc">Dövlət qulluğuna qəbul, dövlət qulluqçularının etik davranış üzrə təlimləri və illik hesabatlar.</p>
+            <span class="resource-card-link">dim.gov.az ↗</span>
+          </a>
+
+          <a href="https://antikorrupsiya.gov.az" target="_blank" rel="noopener noreferrer" class="resource-card" data-rescat="antikorr">
+            <div class="resource-card-icon">⚖️</div>
+            <span class="resource-card-cat">Antikorrupsiya</span>
+            <h3 class="resource-card-title">Korrupsiyaya qarşı Mübarizə Komissiyası</h3>
+            <p class="resource-card-desc">Dövlət orqanlarında antikorrupsiya standartlarının tətbiqinə nəzarət, hesabatlar və araşdırmalar.</p>
+            <span class="resource-card-link">antikorrupsiya.gov.az ↗</span>
+          </a>
+
+          <a href="https://e-qanun.az" target="_blank" rel="noopener noreferrer" class="resource-card" data-rescat="huquq">
+            <div class="resource-card-icon">📚</div>
+            <span class="resource-card-cat">Hüquq Bazası</span>
+            <h3 class="resource-card-title">Hüquqi Aktların Vahid Elektron Bazası</h3>
+            <p class="resource-card-desc">Ədliyyə Nazirliyinin rəsmi portalı — bütün qanunların tam mətni, o cümlədən etik davranış qaydaları haqqında qanun.</p>
+            <span class="resource-card-link">e-qanun.az ↗</span>
+          </a>
+
+          <a href="https://genprosecutor.gov.az" target="_blank" rel="noopener noreferrer" class="resource-card" data-rescat="antikorr">
+            <div class="resource-card-icon">🔍</div>
+            <span class="resource-card-cat">Antikorrupsiya</span>
+            <h3 class="resource-card-title">Baş Prokurorluq — "161" Qaynar Xətt</h3>
+            <p class="resource-card-desc">Korrupsiya faktlarını bildirmək üçün Baş Prokurorluq yanında Korrupsiyaya qarşı Mübarizə Baş İdarəsinin 24/7 etibarlı əlaqə kanalı.</p>
+            <span class="resource-card-link">genprosecutor.gov.az ↗</span>
+          </a>
+
+          <a href="https://cabmin.gov.az" target="_blank" rel="noopener noreferrer" class="resource-card" data-rescat="dovlet">
+            <div class="resource-card-icon">🏢</div>
+            <span class="resource-card-cat">Dövlət Qulluğu</span>
+            <h3 class="resource-card-title">Nazirlər Kabineti</h3>
+            <p class="resource-card-desc">Dövlət idarəçiliyi, icra orqanları fəaliyyəti və dövlət qulluğuna dair normativ sənədlər.</p>
+            <span class="resource-card-link">cabmin.gov.az ↗</span>
+          </a>
+
+          <a href="https://ombudsman.gov.az" target="_blank" rel="noopener noreferrer" class="resource-card" data-rescat="dovlet">
+            <div class="resource-card-icon">🛡️</div>
+            <span class="resource-card-cat">Vətəndaş Hüquqları</span>
+            <h3 class="resource-card-title">İnsan Hüquqları üzrə Müvəkkil — Ombudsman</h3>
+            <p class="resource-card-desc">Dövlət orqanları tərəfindən insan hüquqlarının pozulması hallarında müraciət, araşdırma və müdafiə mexanizmləri.</p>
+            <span class="resource-card-link">ombudsman.gov.az ↗</span>
+          </a>
+
+          <a href="https://e-qanun.az/framework/24397" target="_blank" rel="noopener noreferrer" class="resource-card" data-rescat="huquq">
+            <div class="resource-card-icon">📄</div>
+            <span class="resource-card-cat">Hüquq Bazası</span>
+            <h3 class="resource-card-title">Etik Davranış Qaydaları — Tam Mətn</h3>
+            <p class="resource-card-desc">"Dövlət qulluqçularının etik davranış qaydaları haqqında" AR Qanununun (№ 352-IIIQ) tam mətni e-qanun.az platformasında.</p>
+            <span class="resource-card-link">e-qanun.az ↗</span>
+          </a>
+
+          <div class="resource-card" data-rescat="tedris">
+            <div class="resource-card-icon">🎓</div>
+            <span class="resource-card-cat">Tədris</span>
+            <h3 class="resource-card-title">Bu Tədris Portalı</h3>
+            <p class="resource-card-desc">Müstəqil maarifləndirmə layihəsi: bütün 10 etik prinsip, nəzarət strukturu, interaktiv test və hüquqi istinadlar bir yerdə.</p>
+            <span class="resource-card-link" style="color: rgba(5,5,5,0.4);">Hal-hazırda buradasan</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </div><!-- /page-resurslar -->
+
+  <!-- ==========================================================================
+       SCRIPTS: Parallax, Interactive Calculations, Quiz Engine & Search
+       ========================================================================== -->
+  <script>
+    // 1. Kexsio Parallax on Hero Section
+    const hero = document.getElementById('heroSection');
+    let targetX = 0, targetY = 0;
+    let currentX = 0, currentY = 0;
+    let rafId = null;
+
+    function updateParallax() {
+      currentX += (targetX - currentX) * 0.12;
+      currentY += (targetY - currentY) * 0.12;
+      hero.style.setProperty('--mouse-x', currentX.toFixed(4));
+      hero.style.setProperty('--mouse-y', currentY.toFixed(4));
+
+      if (Math.abs(targetX - currentX) > 0.0005 || Math.abs(targetY - currentY) > 0.0005) {
+        rafId = requestAnimationFrame(updateParallax);
+      } else {
+        currentX = targetX;
+        currentY = targetY;
+        hero.style.setProperty('--mouse-x', currentX.toFixed(4));
+        hero.style.setProperty('--mouse-y', currentY.toFixed(4));
+        rafId = null;
+      }
+    }
+
+    hero.addEventListener('pointermove', (e) => {
+      const rect = hero.getBoundingClientRect();
+      if (!rect.width || !rect.height) return;
+      const rawX = (e.clientX - (rect.left + rect.width / 2)) / (rect.width / 2);
+      const rawY = (e.clientY - (rect.top + rect.height / 2)) / (rect.height / 2);
+      targetX = Math.max(-1, Math.min(1, rawX));
+      targetY = Math.max(-1, Math.min(1, rawY));
+      if (!rafId) rafId = requestAnimationFrame(updateParallax);
+    });
+
+    hero.addEventListener('pointerleave', () => {
+      targetX = 0;
+      targetY = 0;
+      if (!rafId) rafId = requestAnimationFrame(updateParallax);
+    });
+
+    // 2. Principles Section Logic
+    const PRINCIPLES = [
+      { id: '1', num: '01', art: 'Maddə 5', title: 'Qanunçuluq', cat: 'xidmet', catLabel: 'Xidməti Fəaliyyət', summary: 'Dövlət qulluqçusu vəzifələrini icra edərkən AR Konstitusiyasına, qanunlarına və beynəlxalq müqavilələrə dönmədən əməl etməlidir.', law: 'Dövlət qulluqçusu qanunun aliliyini rəhbər tutmalı, qanunsuz tapşırıqları icra etməkdən imtina etməli və dərhal rəhbərə məruzə etməlidir.', rule: 'Rəhbərin qanuna zidd şifahi sərəncamı daxil olduqda, dövlət qulluqçusu yazılı təsdiq tələb etməli və hüquqa zidd əmələ şərik olmamalıdır.' },
+      { id: '2', num: '02', art: 'Maddə 6', title: 'İctimai etimad', cat: 'vetendash', catLabel: 'Vətəndaş Münasibətləri', summary: 'Dövlət orqanının nüfuzunu möhkəmləndirməyə, vətəndaşların dövlətə və dövlət qulluğuna olan inamını artırmağa xidmət edir.', law: 'Həm xidməti fəaliyyətində, həm də şəxsi həyatında dövlət qulluqçusu adını uca tutmalı, cəmiyyətin etimadını sarsıdan hərəkətlərdən çəkinməlidir.', rule: 'Şəxsi həyatda və ictimai məkanlarda dövlət orqanının nüfuzuna xələl gətirə biləcək nalayiq hərəkətlərə yol verilməməlidir.' },
+      { id: '3', num: '03', art: 'Maddə 8', title: 'Vicdanlı davranış', cat: 'xidmet', catLabel: 'Xidməti Fəaliyyət', summary: 'Şəxsi və ya korporativ maraqlardan asılı olmayaraq, ictimai maraqlar naminə vəzifələrini səmərəli və vicdanla yerinə yetirməlidir.', law: 'Şəxsiyyətin, cəmiyyətin və dövlətin maraqları naminə öz xidməti vəzifələrini səmərəli, operativ və yüksək peşəkarlıqla icra etmək borcdur.', rule: 'Vətəndaş müraciətlərini süründürməçiliyə salmamaq, bürokratik maneələr yaratmamaq və xidməti vaxtı səmərəli bölüşdürmək.' },
+      { id: '4', num: '04', art: 'Maddə 9', title: 'Loyallıq', cat: 'xidmet', catLabel: 'Xidməti Fəaliyyət', summary: 'Dövlət orqanlarının fəaliyyəti barədə ictimai çıxışlarda, KİV-də və sosial şəbəkələrdə əsassız tənqidi mülahizələrdən çəkinməlidir.', law: 'Dövlət orqanlarının, onların rəhbərlərinin fəaliyyətinə dair ictimaiyyət qarşısında qanunsuz tənqid yolverilməzdir.', rule: 'Sosial media platformalarında xidmət etdiyi orqanın siyasətinə zidd olan və ya dövlət sirri təşkil edən bəyanatlar yaymamaq.' },
+      { id: '5', num: '05', art: 'Maddə 10', title: 'Qərəzsizlik', cat: 'vetendash', catLabel: 'Vətəndaş Münasibətləri', summary: 'İrqindən, dinindən, dilindən, cinsindən və sosial mənşəyindən asılı olmayaraq bütün vətəndaşlara tam bərabər və obyektiv yanaşmaq.', law: 'Siyasi partiyaların, təşkilatların təsirindən azad olmaq və heç bir şəxsə qanunsuz üstünlük və ya güzəşt verməmək.', rule: 'Xidməti qərarlar qəbul edilərkən şəxsi rəğbət deyil, yalnız obyektiv sübutlar və qanun maddələri əsas götürülməlidir.' },
+      { id: '6', num: '06', art: 'Maddə 11', title: 'Korrupsiyanın qarşısının alınması', cat: 'durustluk', catLabel: 'Dürüstlük və Şəffaflıq', summary: 'Qanunsuz maddi və qeyri-maddi nemətlər, imtiyazlar və güzəştlər tələb etmək, qəbul etmək və ya razılıq vermək qadağandır.', law: 'Qulluq vəzifələrini yerinə yetirməsi müqabilində vətəndaşlardan hər hansı təşəkkür payı, pul və ya xidmət qəbulu qadağandır.', rule: 'Qulluqçu ona təklif olunan qanunsuz ödəniş və ya hədiyyədən imtina etməli və dərhal rəhbərliyə yazılı məruzə etməlidir.' },
+      { id: '7', num: '07', art: 'Maddə 12', title: 'Hədiyyə alma məhdudiyyətləri', cat: 'durustluk', catLabel: 'Dürüstlük və Şəffaflıq', summary: 'Protokol tədbirlərində təqdim edilən hədiyyələrin dəyəri 55 manatdan yuxarı olduqda dövlət orqanının balansına təhvil verilməlidir.', law: 'Qulluq vəzifələrinin qərəzsiz icrasına təsir edə biləcək heç bir hədiyyə şəxsi mülkiyyətə qəbul edilə bilməz.', rule: 'Beynəlxalq və rəsmi protokol qaydasında verilən suvenirlər aktlaşdırılır və müvafiq orqanın mülkiyyətinə keçirilir.' },
+      { id: '8', num: '08', art: 'Maddə 13', title: 'Maraqların toqquşmasının qarşısı', cat: 'durustluk', catLabel: 'Dürüstlük və Şəffaflıq', summary: 'Xidməti vəzifələr ilə şəxsi maraqların kəsişdiyi hallarda maraqların toqquşmasına yol verilməməli və rəhbərliyə bildirilməlidir.', law: 'Dövlət qulluqçusu qohumlarının və ya yaxın münasibətdə olduğu şəxslərin xeyrinə vəzifə səlahiyyətlərindən istifadə edə bilməz.', rule: 'Tender komissiyasında və ya yoxlamada yaxın qohumun iştirakı aşkarlandıqda qulluqçu özünə etiraz edərək prosesdən çəkilməlidir.' },
+      { id: '9', num: '09', art: 'Maddə 14', title: 'Dövlət əmlakından istifadə', cat: 'xidmet', catLabel: 'Xidməti Fəaliyyət', summary: 'Dövlət mülkiyyətində olan avadanlıq, nəqliyyat və digər resurslardan yalnız xidməti məqsədlər üçün qənaətlə istifadə edilməlidir.', law: 'Dövlət əmlakının şəxsi maraqlar, ailə üzvlərinin ehtiyacları və ya qeyri-xidməti məqsədlər üçün istifadəsi qadağandır.', rule: 'Xidməti avtomobillərin, kompüter texnikasının qulluqdan kənar məqsədlər üçün istifadə edilməməsi.' },
+      { id: '10', num: '10', art: 'Maddə 15', title: 'Məlumatların qorunması', cat: 'vetendash', catLabel: 'Vətəndaş Münasibətləri', summary: 'Xidmət zamanı əldə edilmiş fərdi məlumatların, vətəndaşların şəxsi sirlərinin və dövlət sirrinin yayılması qadağandır.', law: 'Xidməti məlumatlar şəxsi maraqlar üçün istifadə edilə bilməz və qulluqdan azad olduqdan sonra da məxfilik qorunmalıdır.', rule: 'Vətəndaşların qeydiyyat, səhhət və əmlak məlumatlarını üçüncü tərəflərlə paylaşmamaq.' }
+    ];
+
+    const principlesGrid = document.getElementById('principlesGrid');
+    const modal = document.getElementById('principleModal');
+    const modalSub = document.getElementById('modalSub');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalLaw = document.getElementById('modalLaw');
+    const modalRule = document.getElementById('modalRule');
+
+    function renderPrinciples(filterCat = 'all') {
+      const items = filterCat === 'all' ? PRINCIPLES : PRINCIPLES.filter(p => p.cat === filterCat);
+      principlesGrid.innerHTML = items.map(p => `
+        <article class="civic-principle-card" data-id="${p.id}" tabindex="0" role="button">
+          <div class="civic-card-top">
+            <span class="civic-card-num">${p.num}</span>
+            <span class="civic-card-article">${p.art}</span>
+          </div>
+          <h3 class="civic-card-title">${p.title}</h3>
+          <p class="civic-card-summary">${p.summary}</p>
+          <div class="civic-card-footer">
+            <span class="civic-category-tag">${p.catLabel}</span>
+            <span class="civic-card-arrow">→</span>
+          </div>
+        </article>
+      `).join('');
+
+      document.querySelectorAll('.civic-principle-card').forEach(card => {
+        card.addEventListener('click', () => {
+          const p = PRINCIPLES.find(x => x.id === card.dataset.id);
+          if (!p) return;
+          modalSub.textContent = `${p.art} • ${p.catLabel}`;
+          modalTitle.textContent = p.title;
+          modalLaw.textContent = p.law;
+          modalRule.textContent = p.rule;
+          modal.style.display = 'flex';
+        });
+      });
+    }
+
+    document.querySelectorAll('.civic-filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.civic-filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        renderPrinciples(btn.dataset.cat);
+      });
+    });
+
+    const closeModal = () => { modal.style.display = 'none'; };
+    document.getElementById('modalCloseBtn').addEventListener('click', closeModal);
+    document.getElementById('modalOkBtn').addEventListener('click', closeModal);
+    modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+
+    renderPrinciples();
+
+    // 3. Oversight Pipeline Logic
+    const PIPELINE_STAGES = [
+      { step: '01', title: 'Qabaqlayıcı Tədbirlər və Maarifləndirmə', desc: 'Dövlət orqanında etik standartların mənimsənilməsi və qanun pozuntularının yaranmadan öncə qarşısının alınması.', law: 'Etik Davranış Qaydaları haqqında Qanun, Maddə 20', items: ['Dövlət qulluğuna yeni qəbul olunanların etik qaydalarla rəsmi tanışlığı', 'Maraqların toqquşması üzrə dövri daxili təlimlər', 'Etik davranış qaydalarının orqanın saytında açıq dərci'] },
+      { step: '02', title: 'Məsləhət Alma və Konfidensial Müraciət', desc: 'Qulluqçuların çətin etik vəziyyətlərdə qanuni istiqamət alması üçün etik müvəkkilə müraciət mexanizmi.', law: 'Etik Müvəkkil Əsasnaməsi', items: ['Maraqların toqquşması riski olduqda əvvəlcədən rəy alınması', 'Xidməti fəaliyyətlə bağlı hədiyyə təklif edildikdə məruzə qaydası', 'Müraciət edən qulluqçunun konfidensiallığının tam qorunması'] },
+      { step: '03', title: 'Xidməti Araşdırma və Qiymətləndirmə', desc: 'Etik qaydaların pozulması barədə vətəndaş və ya daxili məlumat daxil olduqda aparılan hüquqi prosedur.', law: 'Dövlət Qulluğu haqqında Qanun, Maddə 25', items: ['Dövlət orqanı rəhbərinin əmri ilə komissiyanın yaradılması', 'Bütün tərəflərin izahatlarının və maddi sübutların toplanması', 'Qərəzsizlik təmin edilməklə əsaslandırılmış rəyin hazırlanması'] },
+      { step: '04', title: 'İntizam Məsuliyyəti və İllik Hesabatlılıq', desc: 'Təsdiq olunmuş pozuntular üzrə qanunla müəyyən edilmiş tədbirlər və orqanın etik monitorinq yekunları.', law: 'Etik Davranış Qaydaları haqqında Qanun, Maddə 21', items: ['İntizam tənbehlərinin tətbiqi (töhmət, maaşın tutulması, azad olunma)', 'İllik etik vəziyyət barədə ümumiləşdirilmiş hesabat', 'Dövlət İmtahan Mərkəzinə (DİM) illik etik hesabat məlumatlarının təqdimatı'] }
+    ];
+
+    let activePipelineStep = 0;
+    const pipelineTabs = document.getElementById('pipelineTabs');
+    const pipelineContent = document.getElementById('pipelineContent');
+
+    function renderPipeline() {
+      pipelineTabs.innerHTML = PIPELINE_STAGES.map((s, idx) => `
+        <button type="button" class="civic-step-tab ${idx === activePipelineStep ? 'active' : ''}" data-idx="${idx}">
+          <span class="civic-step-num">${s.step}</span>
+          <span class="civic-step-text">${s.title}</span>
+        </button>
+      `).join('');
+
+      const cur = PIPELINE_STAGES[activePipelineStep];
+      pipelineContent.innerHTML = `
+        <div class="civic-stage-info">
+          <span class="civic-stage-legal">${cur.law}</span>
+          <h4 class="civic-stage-heading">${cur.title}</h4>
+          <p class="civic-stage-text">${cur.desc}</p>
+        </div>
+        <div class="civic-stage-actions">
+          <h5 class="civic-actions-title">Əsas İcra Tələbləri:</h5>
+          <ul class="civic-actions-list">
+            ${cur.items.map(i => `<li>${i}</li>`).join('')}
+          </ul>
+        </div>
+      `;
+
+      pipelineTabs.querySelectorAll('.civic-step-tab').forEach(b => {
+        b.addEventListener('click', () => {
+          activePipelineStep = parseInt(b.dataset.idx, 10);
+          renderPipeline();
+        });
+      });
+    }
+    renderPipeline();
+
+    // 4. Complaints Section Logic
+    const complaintsContent = document.getElementById('complaintsTabContent');
+    const tabButtons = document.querySelectorAll('#complaintsTabNav .civic-tab-btn');
+
+    function renderComplaintsTab(tabKey) {
+      if (tabKey === 'muddet') {
+        complaintsContent.innerHTML = `
+          <div class="civic-timeline-grid">
+            <div class="civic-timeline-card standard">
+              <div class="civic-timeline-badge">15 İş Günü</div>
+              <h3 class="civic-timeline-title">Standart Baxılma Müddəti</h3>
+              <p class="civic-timeline-desc">
+                Əlavə araşdırma və ya yoxlama tələb olunmayan bütün etik davranış şikayətlərinə ən geci 15 iş günü ərzində baxılmalı və vətəndaşa əsaslandırılmış yazılı və ya elektron cavab təqdim edilməlidir.
+              </p>
+              <div class="civic-timeline-footer">“Vətəndaşların müraciətləri haqqında” Qanun, Maddə 10.1</div>
+            </div>
+            <div class="civic-timeline-card extended">
+              <div class="civic-timeline-badge extended-badge">30 İş Gününədək</div>
+              <h3 class="civic-timeline-title">Əlavə Araşdırma Tələb Olunduqda</h3>
+              <p class="civic-timeline-desc">
+                Müraciətdə göstərilən faktlar xidməti yoxlama, şahidlərin dindirilməsi və ya digər orqanlardan sənəd tələbi tələb etdikdə, müddət 30 iş gününədək uzadıla bilər. Vətəndaşa bu barədə rəsmi bildiriş verilir.
+              </p>
+              <div class="civic-timeline-footer">“Vətəndaşların müraciətləri haqqında” Qanun, Maddə 10.2</div>
+            </div>
+          </div>
+        `;
+      } else if (tabKey === 'qaydalar') {
+        complaintsContent.innerHTML = `
+          <div class="civic-rules-grid">
+            <div class="civic-rule-box must-have">
+              <h3 class="civic-rule-title">Müraciətdə Zəruri Olan Məlumatlar</h3>
+              <ul class="civic-checklist">
+                <li><strong>Vətəndaşın rekvizitləri:</strong> Adı, soyadı, atasının adı, poçt ünvanı və ya elektron poçt ünvanı, əlaqə telefonu.</li>
+                <li><strong>Aidiyyət:</strong> Şikayət edilən dövlət qulluqçusunun vəzifəsi, adı və ya fəaliyyət göstərdiyi orqanın tam adı.</li>
+                <li><strong>Faktiki hallar:</strong> Etik pozuntunun mahiyyəti, baş verdiyi tarix, saat, ünvan və şərait.</li>
+                <li><strong>Sübut materialları:</strong> Varsa səs yazısı, foto/video sübut, sənəd surətləri və ya şahidlərin məlumatları.</li>
+              </ul>
+            </div>
+            <div class="civic-rule-box invalid">
+              <h3 class="civic-rule-title">Baxılmasından İmtina Edilən Hallar</h3>
+              <ul class="civic-checklist caution">
+                <li><strong>Anonim müraciətlər:</strong> Müəllifin kimliyini müəyyən etmək mümkün olmadıqda (korrupsiya cinayətləri üzrə konkret faktlar istisna olmaqla).</li>
+                <li><strong>Təhqir və böhtan:</strong> Ədəbsiz, nalayiq sözlərdən və ya şəxsiyyəti alçaldan ifadələrdən istifadə edildikdə.</li>
+                <li><strong>Təkrar müraciətlər:</strong> Eyni məsələ üzrə əvvəllər əsaslandırılmış cavab verildikdə və yeni dəlillər olmadıqda.</li>
+                <li><strong>Məhkəmə icraatında olan işlər:</strong> Məhkəmənin səlahiyyətinə aid olan mübahisələr.</li>
+              </ul>
+            </div>
+          </div>
+        `;
+      } else if (tabKey === 'teminatlar') {
+        complaintsContent.innerHTML = `
+          <div class="civic-guarantees-banner">
+            <h3 class="civic-guarantee-heading">Vətəndaşın Təqib Olunmaması Zəmanəti</h3>
+            <p class="civic-guarantee-text">
+              Azərbaycan Respublikasının qanunvericiliyinə əsasən, dövlət orqanının və ya vəzifəli şəxsin qanunsuz hərəkətlərindən, etik davranış qaydalarını pozmasından şikayət etdiyinə görə vətəndaşın təqib edilməsi qəti qadağandır və cinayət məsuliyyətinə səbəb olur.
+            </p>
+            <div class="civic-guarantee-points">
+              <div class="civic-point">
+                <span class="civic-point-icon">⚖</span>
+                <h4>Hüquqi Bərabərlik</h4>
+                <p>Müraciət edən vətəndaşın statusundan asılı olmayaraq şikayətə obyektiv və qərəzsiz baxılır.</p>
+              </div>
+              <div class="civic-point">
+                <span class="civic-point-icon">🔒</span>
+                <h4>Məxfilik</h4>
+                <p>Şikayətin araşdırılması zamanı vətəndaşın şəxsi həyatına və ailə sirrinə aid məlumatlar qorunur.</p>
+              </div>
+              <div class="civic-point">
+                <span class="civic-point-icon">📋</span>
+                <h4>Rəsmi Nəticə</h4>
+                <p>Aparılmış xidməti araşdırmanın yekunu və tətbiq edilmiş intizam tənbehi barədə vətəndaşa yazılı bildiriş verilir.</p>
+              </div>
+            </div>
+          </div>
+        `;
+      }
+    }
+
+    tabButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        tabButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        renderComplaintsTab(btn.dataset.tab);
+      });
+    });
+    renderComplaintsTab('muddet');
+
+    // 5. Website Analysis & Audit Simulator
+    const AUDIT_CRITERIA = [
+      { id: 'c1', cat: 'Normativ Baza', title: 'Etik kodeks və hüquqi bazanın xüsusi bölmədə dərci', w: 20, desc: 'Dövlət orqanının saytında “Etik Davranış Qaydaları” haqqında Qanun və daxili etik kodeks vətəndaşlar üçün asanlıqla tapılan bölmədə yerləşdirilməlidir.', rec: 'Əsas menyuda “Struktur” və ya “Fəaliyyət” altında “Etik Davranış və İntizam” alt-bölməsi açılmalıdır.', checked: true },
+      { id: 'c2', cat: 'Məsuliyyətli Şəxs', title: 'Etik müvəkkilin adı, vəzifəsi və birbaşa əlaqə kanalları', w: 25, desc: 'Təyin olunmuş etik müvəkkilin adı, soyadı, qəbul günləri, birbaşa xidməti e-poçtu və daxili telefon nömrəsi açıq göstərilməlidir.', rec: 'Vətəndaş və əməkdaşların rəhbərliyin müdaxiləsi olmadan birbaşa müvəkkillə əlaqə yaratması üçün xüsusi əlaqə formu təmin edilməlidir.', checked: false },
+      { id: 'c3', cat: 'Əlçatanlıq', title: '“Qaynar Xətt” və elektron müraciət sisteminin inteqrasiyası', w: 20, desc: 'Etik pozuntular, süründürməçilik və qərəzlilik halları barədə 24/7 qeydiyyat aparan çağrı mərkəzi və ya elektron müraciət modulu.', rec: 'Ana səhifədə bir kliklə keçid təmin edən etimad telefonu və elektron forma yerləşdirilməlidir.', checked: true },
+      { id: 'c4', cat: 'Şəffaflıq', title: 'İllik etik vəziyyət və intizam statistikalarının açıqlığı', w: 20, desc: 'İl ərzində daxil olmuş etik şikayətlərin sayı, aparılmış xidməti araşdırmalar və tətbiq olunmuş tədbirlər üzrə ümumiləşdirilmiş hesabat.', rec: 'Hər ilin yanvar ayında ötən ilin etik monitorinq hesabatı ictimaiyyətə açıqlanmalıdır.', checked: false },
+      { id: 'c5', cat: 'Profilaktika', title: 'Maraqların toqquşması və hədiyyə reyestri məlumatları', w: 15, desc: 'Dövlət qulluqçularının qanunla nəzərdə tutulmuş hədiyyə reyestri və maraqların toqquşmasının tənzimlənməsi siyasəti barədə məlumatlandırma.', rec: 'Qanuni 55 manat həddi və protokol hədiyyələrinin təhvil verilmə qaydaları ictimai məlumat üçün dərc olunmalıdır.', checked: true }
+    ];
+
+    const auditContainer = document.getElementById('auditItemsContainer');
+    const scoreNum = document.getElementById('auditScoreNum');
+    const scoreGrade = document.getElementById('auditStatusGrade');
+    const scoreNote = document.getElementById('auditStatusNote');
+    const progressBar = document.getElementById('auditProgressBar');
+    const countEl = document.getElementById('auditCriteriaCount');
+    const statusBox = document.getElementById('auditStatusBox');
+
+    function updateAuditScores() {
+      const total = AUDIT_CRITERIA.reduce((acc, c) => acc + (c.checked ? c.w : 0), 0);
+      const activeCount = AUDIT_CRITERIA.filter(c => c.checked).length;
+      scoreNum.textContent = `${total}%`;
+      progressBar.style.width = `${total}%`;
+      countEl.textContent = `${activeCount} / ${AUDIT_CRITERIA.length}`;
+
+      let color = '#ef4444', grade = 'Kritik Çatışmazlıq', note = 'Saytda etik infrastruktur və vətəndaş əlaqə kanalları yetərli dərəcədə əks olunmayıb.';
+      if (total >= 80) {
+        color = '#10b981'; grade = 'Yüksək Standart'; note = 'Sayt dövlət qulluğunda rəqəmsal etika və şəffaflıq tələblərinə tam cavab verir.';
+      } else if (total >= 50) {
+        color = '#f59e0b'; grade = 'Orta Şəffaflıq'; note = 'Əsas elementlər mövcuddur, lakin etik müvəkkil və hesabatlılıq sahəsində təkmilləşdirmə zəruridir.';
+      }
+
+      progressBar.style.backgroundColor = color;
+      statusBox.style.borderLeftColor = color;
+      scoreGrade.style.color = color;
+      scoreGrade.textContent = grade;
+      scoreNote.textContent = note;
+    }
+
+    function renderAuditItems() {
+      auditContainer.innerHTML = AUDIT_CRITERIA.map(c => `
+        <div class="civic-audit-item ${c.checked ? 'selected' : ''}" data-id="${c.id}">
+          <div class="civic-item-check-box">
+            <span class="civic-check-mark">${c.checked ? '✓' : ''}</span>
+          </div>
+          <div class="civic-item-details">
+            <div class="civic-item-meta">
+              <span class="civic-item-category">${c.cat}</span>
+              <span class="civic-item-weight">+${c.w}% Çəki</span>
+            </div>
+            <h4 class="civic-item-title">${c.title}</h4>
+            <p class="civic-item-desc">${c.desc}</p>
+            ${!c.checked ? `<div class="civic-item-rec"><strong>Tövsiyə:</strong> ${c.rec}</div>` : ''}
+          </div>
+        </div>
+      `).join('');
+
+      auditContainer.querySelectorAll('.civic-audit-item').forEach(item => {
+        item.addEventListener('click', () => {
+          const c = AUDIT_CRITERIA.find(x => x.id === item.dataset.id);
+          if (c) c.checked = !c.checked;
+          renderAuditItems();
+          updateAuditScores();
+        });
+      });
+    }
+
+    renderAuditItems();
+    updateAuditScores();
+
+    // 6. Legislation Section Logic
+    const LAWS = [
+      {
+        id: 'law1',
+        num: '№ 352-IIIQ',
+        name: '“Dövlət qulluqçularının etik davranış qaydaları haqqında” AR Qanunu',
+        date: '31 may 2007-ci il',
+        scope: 'Bütün dövlət orqanlarında dövlət qulluqçularının əməl etməli olduğu hüquqi və əxlaqi prinsipləri, nəzarət mexanizmini və etik müvəkkillərin hüquqi statusunu tənzimləyən ana qanundur.',
+        link: 'https://e-qanun.az/framework/13591',
+        articles: [
+          { num: 'Maddə 3', title: 'Qanunun tətbiq dairəsi', content: 'Bu Qanun Azərbaycan Respublikasının bütün dövlət orqanlarında inzibati və yardımçı vəzifələri tutan dövlət qulluqçularına şamil edilir.' },
+          { num: 'Maddə 11', title: 'Maddi və qeyri-maddi nemətlərin əldə edilməsinin yolverilməzliyi', content: 'Dövlət qulluqçusu qulluq səlahiyyətlərinin icrası müqabilində heç bir şəxsdən hədiyyə, pul, borc və ya digər xidmətlər tələb edə və ya qəbul edə bilməz.' },
+          { num: 'Maddə 20', title: 'Etik davranış qaydalarına əməl olunmasına nəzarət', content: 'Dövlət orqanının rəhbəri və etik müvəkkil qulluqçuların davranışlarına nəzarət edir, xidməti araşdırmalar aparır və qanunsuzluqların qarşısını alır.' },
+          { num: 'Maddə 21', title: 'Etik davranış qaydalarının pozulmasına görə məsuliyyət', content: 'Etik davranış qaydalarını pozan dövlət qulluqçusu intizam məsuliyyətinə cəlb edilir (töhmət, maaşın tutulması, vəzifənin aşağı salınması və ya dövlət qulluğundan azad edilmə).' }
+        ]
+      },
+      {
+        id: 'law2',
+        num: '№ 92-IIQ',
+        name: '“Dövlət qulluğu haqqında” AR Qanunu',
+        date: '21 iyul 2000-ci il',
+        scope: 'Dövlətin vəzifələrini, dövlət qulluqçularının hüquqi statusunu, qulluğa qəbul və xidmət şərtlərini, intizam tənbehlərinin tətbiqi qaydalarını müəyyən edir.',
+        link: 'https://e-qanun.az/framework/4488',
+        articles: [
+          { num: 'Maddə 20', title: 'Dövlət qulluqçusunun əsas vəzifələri', content: 'Dövlət orqanının rəhbəri tərəfindən verilən qanuni əmrləri icra etmək, vətəndaşların hüquqlarını qorumaq və dövlət sirrini saxlamaq əsas vəzifədir.' },
+          { num: 'Maddə 25', title: 'İntizam məsuliyyəti və tənbehlər', content: 'Xidməti vəzifələrin və etik qaydaların pozulmasına görə: töhmət, şiddətli töhmət, ixtisas dərəcəsinin aşağı salınması və dövlət qulluğundan xaric edilmə tətbiq olunur.' }
+        ]
+      },
+      {
+        id: 'law3',
+        num: '№ 580-IIQ',
+        name: '“Korrupsiyaya qarşı mübarizə haqqında” AR Qanunu',
+        date: '13 yanvar 2004-ci il',
+        scope: 'Dövlət orqanlarında şəffaflığın təmin edilməsi, korrupsiya hüquqpozmalarının aşkar edilməsi, qarşısının alınması və qanunsuz üstünlüklərin ləğvi qaydalarını tənzimləyir.',
+        link: 'https://e-qanun.az/framework/5091',
+        articles: [
+          { num: 'Maddə 7', title: 'Yaxın qohumların birgə işləməsinə yol verilməməsi', content: 'Bir-birinə birbaşa tabe olan və ya nəzarəti həyata keçirən vəzifələrdə yaxın qohumların (valideyn, ər-arvad, övlad, qardaş-bacı) birgə xidmət etməsi qadağandır.' },
+          { num: 'Maddə 8', title: 'Hədiyyə qəbul etmə ilə əlaqədar məhdudiyyətlər', content: 'Xidməti vəzifələrinin icrası zamanı dövlət qulluqçusuna bir il ərzində ümumi məbləği 55 manatdan artıq olan hədiyyələrin təqdim olunması yolverilməzdir.' }
+        ]
+      },
+      {
+        id: 'law4',
+        num: '№ 1308-IVQ',
+        name: '“Vətəndaşların müraciətləri haqqında” AR Qanunu',
+        date: '30 sentyabr 2015-ci il',
+        scope: 'Vətəndaşların dövlət orqanlarına şikayət, ərizə və təklif vermək konstitusion hüququnun təmin edilməsi və baxılma proseslərinin vaxt çərçivəsini tənzimləyir.',
+        link: 'https://e-qanun.az/framework/31201',
+        articles: [
+          { num: 'Maddə 7', title: 'Müraciətlərə baxılmasına dair ümumi tələblər', content: 'Bütün müraciətlərə diqqətlə və qərəzsiz yanaşılmalı, süründürməçiliyə yol verilməməli və qanuni əsas olmadan müraciətin təminindən imtina edilməməlidir.' },
+          { num: 'Maddə 10', title: 'Müraciətlərə baxılma müddətləri', content: 'Müraciətlərə ən geci 15 iş günü ərzində, əlavə öyrənilmə və yoxlama tələb olunduqda isə 30 iş gününədək müddətdə baxılır.' }
+        ]
+      }
+    ];
+
+    let activeLawId = 'law1';
+    let lawSearch = '';
+    const lawsNav = document.getElementById('lawsNav');
+    const lawCard = document.getElementById('lawDetailCard');
+
+    function renderLaws() {
+      lawsNav.innerHTML = LAWS.map(l => `
+        <button type="button" class="civic-law-select-btn ${l.id === activeLawId ? 'active' : ''}" data-id="${l.id}">
+          <span class="civic-law-btn-num">${l.num}</span>
+          <span class="civic-law-btn-name">${l.name}</span>
+        </button>
+      `).join('');
+
+      const cur = LAWS.find(l => l.id === activeLawId) || LAWS[0];
+      const filtered = cur.articles.filter(a => {
+        if (!lawSearch.trim()) return true;
+        const q = lawSearch.toLowerCase();
+        return a.num.toLowerCase().includes(q) || a.title.toLowerCase().includes(q) || a.content.toLowerCase().includes(q);
+      });
+
+      lawCard.innerHTML = `
+        <div class="civic-law-card-header">
+          <div>
+            <span class="civic-law-meta">${cur.num} • Qəbul tarixi: ${cur.date}</span>
+            <h3 class="civic-law-card-title">${cur.name}</h3>
+            <p class="civic-law-scope">${cur.scope}</p>
+          </div>
+          <a href="${cur.link}" target="_blank" rel="noopener noreferrer" class="civic-eqanun-link">e-qanun.az-da tam mətn ↗</a>
+        </div>
+        <div class="civic-law-search-box">
+          <input type="text" id="lawSearchInput" class="civic-law-search-input" placeholder="Maddə və ya açar söz üzrə axtarış (məsələn: hədiyyə, intizam, nəzarət)..." value="${lawSearch}">
+        </div>
+        <div class="civic-articles-list">
+          ${filtered.length ? filtered.map(a => `
+            <div class="civic-article-item">
+              <div class="civic-article-header">
+                <span class="civic-article-num">${a.num}</span>
+                <h4 class="civic-article-title">${a.title}</h4>
+              </div>
+              <p class="civic-article-content">${a.content}</p>
+            </div>
+          `).join('') : '<div class="civic-no-results">Axtarışınıza uyğun maddə tapılmadı.</div>'}
+        </div>
+      `;
+
+      lawsNav.querySelectorAll('.civic-law-select-btn').forEach(b => {
+        b.addEventListener('click', () => {
+          activeLawId = b.dataset.id;
+          lawSearch = '';
+          renderLaws();
+        });
+      });
+
+      const inp = document.getElementById('lawSearchInput');
+      inp.addEventListener('input', (e) => {
+        lawSearch = e.target.value;
+        const q = lawSearch.toLowerCase();
+        const f = cur.articles.filter(a => a.num.toLowerCase().includes(q) || a.title.toLowerCase().includes(q) || a.content.toLowerCase().includes(q));
+        const list = lawCard.querySelector('.civic-articles-list');
+        list.innerHTML = f.length ? f.map(a => `
+          <div class="civic-article-item">
+            <div class="civic-article-header">
+              <span class="civic-article-num">${a.num}</span>
+              <h4 class="civic-article-title">${a.title}</h4>
+            </div>
+            <p class="civic-article-content">${a.content}</p>
+          </div>
+        `).join('') : '<div class="civic-no-results">Axtarışınıza uyğun maddə tapılmadı.</div>';
+      });
+    }
+    renderLaws();
+
+    // 7. Interactive Ethics Dilemmas Quiz
+    const QUIZ = [
+      {
+        cat: 'Hədiyyə Alma Qadağası',
+        q: 'Bayram ərəfəsində müraciətinə baxdığınız vətəndaş sizə minnətdarlıq əlaməti olaraq dəyəri təxminən 80 AZN olan xatirə saatı və şirniyyat dəsti təqdim edir. Dövlət qulluqçusu kimi qanuni addımınız necə olmalıdır?',
+        options: [
+          { text: 'Dəyəri cüzi olduğu və minnətdarlıq məqsədi daşıdığı üçün təşəkkürlə qəbul etmək.', ok: false, law: 'Maddə 11.1', exp: 'Qanunvericiliyə görə, xidməti vəzifələrin icrası ilə bağlı vətəndaşlardan hər hansı hədiyyə və ya ödəniş qəbul edilməsi qadağandır.' },
+          { text: 'Nəzakətlə imtina etmək; protokol qaydasında verilən rəsmi hədiyyədirsə və 55 AZN-dən yuxarıdırsa, dövlət orqanının balansına təhvil vermək.', ok: true, law: 'Maddə 12 & Korrupsiya Qanunu Maddə 8', exp: 'Dövlət qulluqçusu vətəndaşların şəxsi hədiyyələrindən qəti imtina etməlidir. Yalnız rəsmi protokol hədiyyələri 55 AZN-dən yuxarı olduqda dövlət balansına təhvil verilir.' },
+          { text: 'Hədiyyəni qəbul edib iş yoldaşları ilə bölüşmək.', ok: false, law: 'Maddə 21', exp: 'Hədiyyənin kollektivlə bölüşdürülməsi onun qanunsuz xarakterini dəyişmir və intizam məsuliyyəti yaradır.' },
+          { text: 'Vətəndaşı incitməmək üçün götürüb dərhal xeyriyyə fonduna göndərmək.', ok: false, law: 'Maddə 11.2', exp: 'Qulluqçu ona təklif olunan hədiyyədən elə yerindəcə imtina etməli və zərurət olduqda rəhbərliyə məruzə etməlidir.' }
+        ]
+      },
+      {
+        cat: 'Maraqların Toqquşması',
+        q: 'Siz şöbənizdə dövlət satınalmaları (tender) komissiyasının üzvüsünüz. Məlum olur ki, müsabiqədə iştirak edən şirkətlərdən birinin təsisçisi sizin doğma qardaşınızdır. Qanuna uyğun hərəkətiniz necə olmalıdır?',
+        options: [
+          { text: 'Qərəzsiz davranacağınıza söz verərək qiymətləndirmədə iştiraka davam etmək.', ok: false, law: 'Maddə 13', exp: 'Yaxın qohumun iştirak etdiyi müsabiqədə şəxsi maraq şübhəsi yaranır və qərəzsizlik təmin edilə bilməz.' },
+          { text: 'Dərhal rəhbərliyə maraqların toqquşması barədə yazılı məlumat vermək, özünə etiraz edərək komissiya işindən kənarlaşmaq.', ok: true, law: 'Maddə 13.2 & Dövlət Satınalmaları Qanunu', exp: 'Dövlət qulluqçusu maraqların toqquşması ehtimalı yarandıqda dərhal rəhbərliyə bildirməli və həmin məsələ üzrə qərar qəbul etməkdən çəkilməlidir.' },
+          { text: 'Qardaşınızın şirkətinə daha yüksək bal vermək, lakin bunu digər üzvlərdən gizlətmək.', ok: false, law: 'Cinayət Məcəlləsi Maddə 308', exp: 'Bu hərəkət birbaşa korrupsiya cinayəti və vəzifə səlahiyyətlərindən sui-istifadədir.' },
+          { text: 'Səsvermə zamanı sadəcə bitərəf qalmaq və heç kimə heç nə deməmək.', ok: false, law: 'Maddə 13.3', exp: 'Maraqların toqquşması barədə məlumat verməməyin özü müstəqil intizam pozuntusudur.' }
+        ]
+      },
+      {
+        cat: 'Qanunçuluq və Rəhbər Tapşırığı',
+        q: 'Dövlət orqanının rəhbəri sizə qanunun birbaşa tələblərinə zidd olan və ya şübhə doğuran şifahi sərəncam verir. Bu halda dövlət qulluqçusunun hüquqi davranışı necə tənzimlənir?',
+        options: [
+          { text: 'Rəhbərin sərəncamı mütləq olduğu üçün heç bir etiraz etmədən icra etmək.', ok: false, law: 'Dövlət Qulluğu Qanunu Maddə 20', exp: 'Dövlət qulluqçusu bilərəkdən qanunsuz tapşırığı icra etdikdə rəhbərlə bərabər məsuliyyət daşıyır.' },
+          { text: 'Tapşırığın qanunsuzluğu barədə rəhbərə yazılı məlumat vermək, yazılı təsdiq tələb etmək; yazılı təsdiq verildikdə isə icra etməyərək yuxarı orqana bildirmək.', ok: true, law: 'Maddə 5.2 & Dövlət Qulluğu Qanunu Maddə 20.3', exp: 'Qanun dövlət qulluqçusuna qanunsuz tapşırıqdan imtina etmək hüququ və təminatı verir. Qulluqçu yazılı əsaslandırma tələb etməlidir.' },
+          { text: 'İmtina etmək və həmin gün işdən azad olunma barədə ərizə vermək.', ok: false, law: 'Maddə 5', exp: 'İşdən çıxmaq hüquqi həll yolu deyil; dövlət qulluqçusu qanunun aliliyini qorumaq üçün rəsmi proseduru icra etməlidir.' },
+          { text: 'Sosial şəbəkələrdə anonim hesabdan rəhbərin tapşırığını tənqid edən status yazmaq.', ok: false, law: 'Maddə 9', exp: 'Bu hərəkət həm loyallıq prinsipini, həm də daxili xidməti intizam qaydalarını pozur.' }
+        ]
+      },
+      {
+        cat: 'Loyallıq və Sosial Media',
+        q: 'Dövlət orqanının qəbul etdiyi rəsmi qərar barədə şəxsi Facebook səhifənizdə orqanın rəhbərliyini tənqid edən və qərəzli fikirlər əks etdirən yazı dərc etmək istəyirsiniz. Qanunun mövqeyi nədir?',
+        options: [
+          { text: 'Şəxsi səhifə olduğu üçün istənilən fikri sərbəst şəkildə yaymaq olar.', ok: false, law: 'Maddə 9.1', exp: 'Dövlət qulluqçusunun söz azadlığı qanunla müəyyən edilmiş loyallıq və dövlət nüfuzunun qorunması tələbləri ilə məhdudlaşır.' },
+          { text: 'Dövlət qulluqçusu dövlət orqanlarının fəaliyyəti barədə ictimaiyyət qarşısında əsassız tənqidi mülahizələrdən və nüfuza xələl gətirən çıxışlardan çəkinməlidir.', ok: true, law: 'Maddə 9.2', exp: 'Loyallıq prinsipi dövlət qulluqçusunun KİV-də və sosial şəbəkələrdə dövlət orqanının siyasətinə zidd çıxışlar etməsini qadağan edir.' },
+          { text: 'Yalnız iş vaxtı bitdikdən sonra tənqid etməyə icazə verilir.', ok: false, law: 'Maddə 6', exp: 'Loyallıq və etik davranış tələbləri qulluqçunun həm iş vaxtı, həm də işdən kənar davranışlarına şamil edilir.' },
+          { text: 'Yalnız foto paylaşmaq olar, mətn yazmaq olmaz.', ok: false, law: 'Maddə 9', exp: 'Formasından asılı olmayaraq nüfuza xələl gətirən istənilən ictimai material loyallıq pozuntusudur.' }
+        ]
+      },
+      {
+        cat: 'Xidməti Məlumatların Məxfiliyi',
+        q: 'Dövlət qulluğunda vətəndaşların fərdi məlumat bazası ilə işləyirsiniz. Yaxın dostunuz şəxsi məqsədlə tanışının ailə vəziyyəti və qeydiyyat ünvanını yoxlamağınızı xahiş edir. Nə etməlisiniz?',
+        options: [
+          { text: 'Yaxın dost olduğu və məlumatı heç kimə deməyəcəyinə and içdiyi üçün şifahi kömək etmək.', ok: false, law: 'Fərdi Məlumatlar haqqında Qanun', exp: 'Fərdi məlumatların qanunsuz ötürülməsi qanunla birbaşa qadağandır və cinayət/inzibati məsuliyyət yaradır.' },
+          { text: 'Məlumatların yalnız xidməti məqsədlər üçün istifadə oluna biləcəyini bildirərək qəti imtina etmək və məxfiliyi qorumaq.', ok: true, law: 'Maddə 15', exp: 'Xidməti fəaliyyət zamanı əldə olunmuş məlumatlar konfidensialdır və şəxsi xahişlər əsasında heç bir üçüncü şəxsə verilə bilməz.' },
+          { text: 'Məlumatı ekrandan şəklini çəkib WhatsApp ilə göndərmək.', ok: false, law: 'Maddə 15.2', exp: 'İnformasiya təhlükəsizliyinin ağır pozulması və xidməti sirrin yayılması hesab edilir.' },
+          { text: 'Məlumatı yalnız dostunuzun özünə aid olduqda vermək, başqasına aid olduqda isə rüşvət tələb etmək.', ok: false, law: 'Cinayət Məcəlləsi Maddə 311', exp: 'Həm məlumatın qorunması qaydalarının pozulması, həm də rüşvətxorluq cinayətidir.' }
+        ]
+      }
+    ];
+
+    let quizIdx = 0;
+    let quizScore = 0;
+    let quizSelected = null;
+    let quizSubmitted = false;
+    const quizContainer = document.getElementById('quizContainer');
+
+    function renderQuiz() {
+      if (quizIdx >= QUIZ.length) {
+        quizContainer.innerHTML = `
+          <div class="civic-results-card">
+            <span class="civic-results-badge">TESTİN NƏTİCƏSİ</span>
+            <h3 class="civic-results-title">${quizScore >= 4 ? 'Təbriklər! Yüksək Etik Bilik və Qərar Bacarığı' : 'Etik Qanunvericiliyi Yenidən Nəzərdən Keçirmək Tövsiyə Olunur'}</h3>
+            <div class="civic-results-score">
+              <span class="civic-big-score">${quizScore}</span>
+              <span class="civic-total-score">/ ${QUIZ.length} Düzgün</span>
+            </div>
+            <p class="civic-results-text">
+              ${quizScore === 5 ? 'Siz Azərbaycan Respublikasının dövlət qulluğunda etik davranış qaydaları və antikorrupsiya standartlarını dərindən mənimsəmisiniz.' :
+                quizScore === 4 ? 'Nəticəniz çox yaxşıdır! Əsas etik prinsipləri və maraqların toqquşması mexanizmlərini düzgün qiymətləndirirsiniz.' :
+                'Bəzi mürəkkəb etik situasiyalarda qanunun tələblərini bir daha xatırlamaq faydalı olardı. Bölmələrdəki qanunvericilik izahlarını oxumağı tövsiyə edirik.'}
+            </p>
+            <div class="civic-results-actions">
+              <button type="button" class="civic-btn-primary" id="restartQuizBtn">Testi Yenidən Keç ↺</button>
+              <a href="#qanunvericilik" class="civic-btn-secondary">Qanunvericiliyə Keçid</a>
+            </div>
+          </div>
+        `;
+        document.getElementById('restartQuizBtn').addEventListener('click', () => {
+          quizIdx = 0;
+          quizScore = 0;
+          quizSelected = null;
+          quizSubmitted = false;
+          renderQuiz();
+        });
+        return;
+      }
+
+      const q = QUIZ[quizIdx];
+      quizContainer.innerHTML = `
+        <div class="civic-quiz-box">
+          <div class="civic-quiz-meta">
+            <span class="civic-quiz-category">${q.cat}</span>
+            <span class="civic-quiz-counter">Sual ${quizIdx + 1} / ${QUIZ.length}</span>
+          </div>
+          <div class="civic-quiz-bar">
+            <div class="civic-quiz-bar-fill" style="width: ${((quizIdx + 1) / QUIZ.length) * 100}%"></div>
+          </div>
+          <h3 class="civic-quiz-scenario">${q.q}</h3>
+          <div class="civic-quiz-options">
+            ${q.options.map((opt, i) => {
+              let cls = 'civic-quiz-opt';
+              if (quizSelected === i) cls += ' selected';
+              if (quizSubmitted) {
+                if (opt.ok) cls += ' correct';
+                else if (quizSelected === i && !opt.ok) cls += ' wrong';
+              }
+              return `
+                <button type="button" class="${cls}" data-opt="${i}" ${quizSubmitted ? 'disabled' : ''}>
+                  <span class="civic-opt-letter">${String.fromCharCode(65 + i)}</span>
+                  <span class="civic-opt-text">${opt.text}</span>
+                </button>
+              `;
+            }).join('')}
+          </div>
+
+          ${quizSubmitted && quizSelected !== null ? `
+            <div class="civic-feedback-box ${q.options[quizSelected].ok ? 'success' : 'alert'}">
+              <div class="civic-feedback-header">
+                <strong>${q.options[quizSelected].ok ? '✓ Düzgün Qərar!' : '✕ Qeyri-Düzgün Qərar!'}</strong>
+                <span class="civic-feedback-law">${q.options[quizSelected].law}</span>
+              </div>
+              <p class="civic-feedback-text">${q.options[quizSelected].exp}</p>
+            </div>
+          ` : ''}
+
+          <div class="civic-quiz-actions">
+            ${!quizSubmitted ? `
+              <button type="button" class="civic-btn-primary" id="confirmAnswerBtn" ${quizSelected === null ? 'disabled' : ''}>Cavabı Təsdiq Et</button>
+            ` : `
+              <button type="button" class="civic-btn-primary" id="nextQuestionBtn">${quizIdx + 1 < QUIZ.length ? 'Növbəti Kazus →' : 'Nəticəyə Bax →'}</button>
+            `}
+          </div>
+        </div>
+      `;
+
+      quizContainer.querySelectorAll('.civic-quiz-opt').forEach(btn => {
+        btn.addEventListener('click', () => {
+          if (quizSubmitted) return;
+          quizSelected = parseInt(btn.dataset.opt, 10);
+          renderQuiz();
+        });
+      });
+
+      const confirmBtn = document.getElementById('confirmAnswerBtn');
+      if (confirmBtn) {
+        confirmBtn.addEventListener('click', () => {
+          if (quizSelected === null) return;
+          quizSubmitted = true;
+          if (q.options[quizSelected].ok) quizScore++;
+          renderQuiz();
+        });
+      }
+
+      const nextBtn = document.getElementById('nextQuestionBtn');
+      if (nextBtn) {
+        nextBtn.addEventListener('click', () => {
+          quizIdx++;
+          quizSelected = null;
+          quizSubmitted = false;
+          renderQuiz();
+        });
+      }
+    }
+    renderQuiz();
+
+    // 8. Back to top button
+    document.getElementById('backToTopBtn').addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>

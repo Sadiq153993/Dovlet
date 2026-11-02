@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ebe8e1" />
+      <stop offset="50%" stop-color="#dfdbd2" />
+      <stop offset="100%" stop-color="#cfc9be" />
+    </linearGradient>
+    <linearGradient id="curve1" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#e3ded4" stop-opacity="0.6" />
+    </linearGradient>
+    <linearGradient id="curve2" x1="100%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#d4cec3" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#f8f7f4" stop-opacity="0.95" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)" />
+  <!-- Architectural fluid curves evoking the Heydar Aliyev Centre -->
+  <path d="M -50 750 Q 250 450, 550 520 T 1150 250 L 1250 850 L -50 850 Z" fill="url(#curve1)" />
+  <path d="M 150 800 Q 450 320, 780 380 T 1250 180 L 1250 850 L 150 850 Z" fill="url(#curve2)" />
+  <path d="M 280 800 Q 600 240, 950 310 Q 1100 340, 1250 480 L 1250 850 L 280 850 Z" fill="#ffffff" fill-opacity="0.75" />
+  <path d="M -20 600 Q 300 150, 700 220 T 1250 120" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-opacity="0.6" />
+  <!-- Editorial watermark -->
+  <text x="600" y="730" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="600" letter-spacing="4" fill="#6e6a62">HEYDƏR ƏLİYEV MƏRKƏZİ — MEMARLIQ TƏSVİRİ (FALLBACK)</text>
+</svg>

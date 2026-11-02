@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="asan-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e3e0d8" />
+      <stop offset="50%" stop-color="#d6d1c6" />
+      <stop offset="100%" stop-color="#c5bfb2" />
+    </linearGradient>
+    <linearGradient id="glass" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#a8b5b2" stop-opacity="0.4" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#asan-bg)" />
+  <!-- Civic public service building structure -->
+  <rect x="80" y="160" width="640" height="240" rx="8" fill="#dfded9" />
+  <!-- Glass facade panels -->
+  <rect x="110" y="190" width="170" height="210" rx="4" fill="url(#glass)" />
+  <rect x="315" y="190" width="170" height="210" rx="4" fill="url(#glass)" />
+  <rect x="520" y="190" width="170" height="210" rx="4" fill="url(#glass)" />
+  <!-- Roof canopy -->
+  <polygon points="60,160 740,160 710,130 90,130" fill="#2b2d30" />
+  <line x1="80" y1="400" x2="720" y2="400" stroke="#8c887e" stroke-width="4" />
+  <text x="400" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="600" letter-spacing="3" fill="#65625a">ASAN XİDMƏT MƏRKƏZİ (FALLBACK)</text>
+</svg>
