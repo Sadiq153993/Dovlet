@@ -624,33 +624,6 @@
     </div>
   </section>
 
-  <!-- Deep-Dive Modal for Principles -->
-  <div id="principleModal" class="civic-modal-backdrop" style="display: none;" role="dialog" aria-modal="true">
-    <div class="civic-modal-dialog">
-      <div class="civic-modal-header">
-        <div>
-          <span id="modalSub" class="civic-modal-sub">MADDƏ 5</span>
-          <h3 id="modalTitle" class="civic-modal-title">Qanunçuluq</h3>
-        </div>
-        <button type="button" class="civic-modal-close" id="modalCloseBtn" aria-label="Bağla">✕</button>
-      </div>
-      <div class="civic-modal-body">
-        <div class="civic-modal-block">
-          <h4 class="civic-block-title">Qanunun Tələbi</h4>
-          <p id="modalLaw" class="civic-block-text"></p>
-        </div>
-        <div class="civic-modal-block highlight">
-          <h4 class="civic-block-title">Praktik Dövlət Qulluğu Qaydası</h4>
-          <p id="modalRule" class="civic-block-text"></p>
-        </div>
-      </div>
-      <div class="civic-modal-footer">
-        <span class="civic-modal-note">Mənbə: AR Qanunu № 352-IIIQ</span>
-        <button type="button" class="civic-btn-primary" id="modalOkBtn">Anladım</button>
-      </div>
-    </div>
-  </div>
-
   <!-- ==========================================================================
        SECTION 03: ETİK NƏZARƏT VƏ ETİK MÜVƏKKİLLƏR
        ========================================================================== -->
@@ -1452,20 +1425,20 @@
             <span class="resource-card-link">genprosecutor.gov.az ↗</span>
           </a>
 
-          <a href="https://cabmin.gov.az" target="_blank" rel="noopener noreferrer" class="resource-card" data-rescat="dovlet">
+          <a href="https://nk.gov.az" target="_blank" rel="noopener noreferrer" class="resource-card" data-rescat="dovlet">
             <div class="resource-card-icon">🏢</div>
             <span class="resource-card-cat">Dövlət Qulluğu</span>
             <h3 class="resource-card-title">Nazirlər Kabineti</h3>
             <p class="resource-card-desc">Dövlət idarəçiliyi, icra orqanları fəaliyyəti və dövlət qulluğuna dair normativ sənədlər.</p>
-            <span class="resource-card-link">cabmin.gov.az ↗</span>
+            <span class="resource-card-link">nk.gov.az ↗</span>
           </a>
 
-          <a href="https://ombudsman.gov.az" target="_blank" rel="noopener noreferrer" class="resource-card" data-rescat="dovlet">
+          <a href="https://ombudsman.az" target="_blank" rel="noopener noreferrer" class="resource-card" data-rescat="dovlet">
             <div class="resource-card-icon">🛡️</div>
             <span class="resource-card-cat">Vətəndaş Hüquqları</span>
             <h3 class="resource-card-title">İnsan Hüquqları üzrə Müvəkkil — Ombudsman</h3>
             <p class="resource-card-desc">Dövlət orqanları tərəfindən insan hüquqlarının pozulması hallarında müraciət, araşdırma və müdafiə mexanizmləri.</p>
-            <span class="resource-card-link">ombudsman.gov.az ↗</span>
+            <span class="resource-card-link">ombudsman.az ↗</span>
           </a>
 
           <a href="https://e-qanun.az/framework/24397" target="_blank" rel="noopener noreferrer" class="resource-card" data-rescat="huquq">
@@ -1476,19 +1449,46 @@
             <span class="resource-card-link">e-qanun.az ↗</span>
           </a>
 
-          <div class="resource-card" data-rescat="tedris">
+          <a href="https://dia.edu.az" target="_blank" rel="noopener noreferrer" class="resource-card" data-rescat="tedris">
             <div class="resource-card-icon">🎓</div>
             <span class="resource-card-cat">Tədris</span>
-            <h3 class="resource-card-title">Bu Tədris Portalı</h3>
-            <p class="resource-card-desc">Müstəqil maarifləndirmə layihəsi: bütün 10 etik prinsip, nəzarət strukturu, interaktiv test və hüquqi istinadlar bir yerdə.</p>
-            <span class="resource-card-link" style="color: rgba(5,5,5,0.4);">Hal-hazırda buradasan</span>
-          </div>
+            <h3 class="resource-card-title">Dövlət İdarəçilik Akademiyası</h3>
+            <p class="resource-card-desc">Azərbaycan Respublikasının Prezidenti yanında Dövlət İdarəçilik Akademiyası — dövlət qulluqçularının hazırlığı, ixtisasartırma kursları və dövlət idarəçiliyi üzrə təhsil.</p>
+            <span class="resource-card-link">dia.edu.az ↗</span>
+          </a>
 
         </div>
       </div>
     </section>
 
   </div><!-- /page-resurslar -->
+
+  <!-- Deep-Dive Modal for Principles (Placed outside .spa-page to avoid transform containing-block bug) -->
+  <div id="principleModal" class="civic-modal-backdrop" style="display: none;" role="dialog" aria-modal="true">
+    <div class="civic-modal-dialog">
+      <div class="civic-modal-header">
+        <div>
+          <span id="modalSub" class="civic-modal-sub">MADDƏ 5</span>
+          <h3 id="modalTitle" class="civic-modal-title">Qanunçuluq</h3>
+        </div>
+        <button type="button" class="civic-modal-close" id="modalCloseBtn" aria-label="Bağla">✕</button>
+      </div>
+      <div class="civic-modal-body">
+        <div class="civic-modal-block">
+          <h4 class="civic-block-title">Qanunun Tələbi</h4>
+          <p id="modalLaw" class="civic-block-text"></p>
+        </div>
+        <div class="civic-modal-block highlight">
+          <h4 class="civic-block-title">Praktik Dövlət Qulluğu Qaydası</h4>
+          <p id="modalRule" class="civic-block-text"></p>
+        </div>
+      </div>
+      <div class="civic-modal-footer">
+        <span class="civic-modal-note">Mənbə: AR Qanunu № 352-IIIQ</span>
+        <button type="button" class="civic-btn-primary" id="modalOkBtn">Anladım</button>
+      </div>
+    </div>
+  </div>
 
   <!-- ==========================================================================
        SCRIPTS: Parallax, Interactive Calculations, Quiz Engine & Search
@@ -1572,7 +1572,7 @@
       `).join('');
 
       document.querySelectorAll('.civic-principle-card').forEach(card => {
-        card.addEventListener('click', () => {
+        const open = () => {
           const p = PRINCIPLES.find(x => x.id === card.dataset.id);
           if (!p) return;
           modalSub.textContent = `${p.art} • ${p.catLabel}`;
@@ -1580,6 +1580,11 @@
           modalLaw.textContent = p.law;
           modalRule.textContent = p.rule;
           modal.style.display = 'flex';
+          document.body.style.overflow = 'hidden';
+        };
+        card.addEventListener('click', open);
+        card.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); }
         });
       });
     }
@@ -1592,7 +1597,10 @@
       });
     });
 
-    const closeModal = () => { modal.style.display = 'none'; };
+    const closeModal = () => {
+      modal.style.display = 'none';
+      document.body.style.overflow = '';
+    };
     document.getElementById('modalCloseBtn').addEventListener('click', closeModal);
     document.getElementById('modalOkBtn').addEventListener('click', closeModal);
     modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
@@ -1979,34 +1987,91 @@
       }
     ];
 
-    let quizIdx = 0;
-    let quizScore = 0;
-    let quizSelected = null;
-    let quizSubmitted = false;
-    const quizContainer = document.getElementById('quizContainer');
+    // Additional dilemmas used by the 10-question "İnteraktiv test" page
+    const QUIZ_EXTRA = [
+      {
+        cat: 'Dövlət Əmlakından İstifadə',
+        q: 'Həftəsonu ailənizlə şəhərdən kənara istirahətə getmək üçün sizə təhkim olunmuş xidməti avtomobildən istifadə etmək istəyirsiniz. Bu davranış necə qiymətləndirilir?',
+        options: [
+          { text: 'Yanacağı öz hesabıma ödəsəm, istifadə etmək olar.', ok: false, law: 'Maddə 14', exp: 'Yanacağın şəxsi vəsaitlə ödənilməsi dövlət əmlakının qeyri-xidməti məqsədlə istifadəsini qanuni etmir.' },
+          { text: 'Xidməti avtomobil yalnız xidməti məqsədlər üçündür; şəxsi səfər üçün istifadəsi qadağandır.', ok: true, law: 'Maddə 14', exp: 'Dövlət əmlakı, o cümlədən nəqliyyat vasitələri, yalnız xidməti vəzifələrin icrası üçün və qənaətlə istifadə edilməlidir.' },
+          { text: 'Rəhbərə şifahi deyib icazə alsam, problem yoxdur.', ok: false, law: 'Maddə 14', exp: 'Rəhbərin şifahi razılığı dövlət əmlakından şəxsi məqsədlə istifadə qadağasını aradan qaldırmır.' },
+          { text: 'Yalnız iş günü olmayan vaxtlarda istifadə etmək olar.', ok: false, law: 'Maddə 14', exp: 'Qadağa iş vaxtından asılı deyil — əmlakın təyinatı xidməti məqsəd ilə məhdudlaşır.' }
+        ]
+      },
+      {
+        cat: 'Qərəzsizlik',
+        q: 'Qəbul zamanı növbədə gözləyən vətəndaşlar arasında tanıdığınız nüfuzlu bir şəxs sizdən növbəsiz qəbul olunmağı xahiş edir. Necə davranmalısınız?',
+        options: [
+          { text: 'Nüfuzlu şəxs olduğu üçün hörmət əlaməti olaraq növbəsiz qəbul etmək.', ok: false, law: 'Maddə 10', exp: 'Sosial statusa görə üstünlük vermək qərəzsizlik prinsipinin birbaşa pozulmasıdır.' },
+          { text: 'Bütün vətəndaşlara bərabər yanaşaraq, qanunla müəyyən edilmiş güzəşt halları istisna olmaqla, ümumi növbə qaydasını tətbiq etmək.', ok: true, law: 'Maddə 10', exp: 'Dövlət qulluqçusu heç bir şəxsə qanunsuz üstünlük verməməli, bütün vətəndaşlara bərabər və obyektiv yanaşmalıdır.' },
+          { text: 'Gizli şəkildə arxa qapıdan qəbul etmək.', ok: false, law: 'Maddə 10 & 13', exp: 'Gizli qəbul həm qərəzsizliyi, həm də şəffaflıq tələblərini pozur.' },
+          { text: 'Onu başqa əməkdaşa yönləndirib növbəsiz qəbul etdirmək.', ok: false, law: 'Maddə 10', exp: 'Üstünlüyün başqa əməkdaş vasitəsilə verilməsi pozuntunun mahiyyətini dəyişmir.' }
+        ]
+      },
+      {
+        cat: 'Vicdanlı Davranış',
+        q: 'Vətəndaşın müraciəti sizin səlahiyyətinizə aiddir, lakin iş yükünüz çoxdur. Müraciətə baxılma müddəti başa çatmaq üzrədir. Düzgün yanaşma hansıdır?',
+        options: [
+          { text: 'Müraciəti bir müddət kənara qoymaq, vətəndaş təkrar müraciət edəndə baxmaq.', ok: false, law: 'Maddə 8', exp: 'Süründürməçilik vicdanlı davranış prinsipinə və müraciətlər haqqında qanuna ziddir.' },
+          { text: 'Müraciətə qanunla müəyyən edilmiş müddətdə baxmaq; əlavə araşdırma lazımdırsa, müddətin uzadılması barədə vətəndaşa rəsmi bildiriş göndərmək.', ok: true, law: 'Maddə 8 & Müraciətlər Qanunu Maddə 10', exp: 'Müraciətə 15 iş günü ərzində baxılmalı, zərurət olduqda müddət 30 iş gününədək uzadılmalı və vətəndaş məlumatlandırılmalıdır.' },
+          { text: 'Məzmuna baxmadan formal imtina cavabı göndərmək.', ok: false, law: 'Müraciətlər Qanunu Maddə 7', exp: 'Qanuni əsas olmadan müraciətin təminindən imtina yolverilməzdir.' },
+          { text: 'Müraciəti aidiyyəti olmayan başqa şöbəyə ötürmək.', ok: false, law: 'Maddə 8', exp: 'Səlahiyyətə aid müraciəti əsassız yönləndirmək bürokratik maneə yaratmaq deməkdir.' }
+        ]
+      },
+      {
+        cat: 'Korrupsiyanın Qarşısının Alınması',
+        q: 'Lisenziya sənədlərini yoxladığınız şirkətin nümayəndəsi "prosesi sürətləndirmək üçün" sizə zərf içində pul təklif edir. Qanuni davranış hansıdır?',
+        options: [
+          { text: 'Pulu qəbul etmədən, lakin heç kimə bildirmədən məsələni bağlamaq.', ok: false, law: 'Maddə 11', exp: 'Qanunsuz təklif barədə məlumat verməmək korrupsiyaya qarşı mübarizə öhdəliyinin pozulmasıdır.' },
+          { text: 'Təklifdən qəti imtina etmək və dərhal rəhbərliyə, zərurət olduqda hüquq-mühafizə orqanlarına yazılı məlumat vermək.', ok: true, law: 'Maddə 11 & Korrupsiya Qanunu', exp: 'Dövlət qulluqçusu qanunsuz təklifdən imtina etməli və bu barədə dərhal müvafiq qaydada məlumat verməlidir.' },
+          { text: 'Pulu götürüb sənədləri qanuna uyğun yoxlamaq — qərar dəyişmirsə, problem yoxdur.', ok: false, law: 'Cinayət Məcəlləsi Maddə 311', exp: 'Qərarın qanuni olmasından asılı olmayaraq, pul qəbul etmək rüşvət almaq cinayətidir.' },
+          { text: 'Pulu qəbul edib xeyriyyəyə vermək.', ok: false, law: 'Maddə 11', exp: 'Qanunsuz nemətin sonradan xeyriyyəyə verilməsi pozuntunu aradan qaldırmır.' }
+        ]
+      },
+      {
+        cat: 'İctimai Etimad',
+        q: 'İşdən sonra ictimai yerdə mübahisə zamanı qarşı tərəfə "Mən dövlət qulluqçusuyam, sənin işini bitirərəm" deyə hədə-qorxu gəlirsiniz. Bu necə qiymətləndirilir?',
+        options: [
+          { text: 'İş vaxtından kənar olduğu üçün etik qaydalara aid deyil.', ok: false, law: 'Maddə 6', exp: 'İctimai etimad prinsipi dövlət qulluqçusunun şəxsi həyatdakı davranışına da şamil edilir.' },
+          { text: 'Vəzifə statusundan şəxsi mübahisədə təzyiq vasitəsi kimi istifadə etmək etik pozuntudur və dövlət orqanının nüfuzuna xələl gətirir.', ok: true, law: 'Maddə 6 & 13', exp: 'Qulluqçu həm xidmətdə, həm də şəxsi həyatda dövlət orqanının nüfuzunu qorumalı və vəzifəsindən şəxsi maraq üçün istifadə etməməlidir.' },
+          { text: 'Qarşı tərəf haqsızdırsa, bu ifadə məqbuldur.', ok: false, law: 'Maddə 6', exp: 'Mübahisədə haqlı olmaq vəzifə statusundan təzyiq vasitəsi kimi istifadəyə haqq qazandırmır.' },
+          { text: 'Yalnız video çəkilibsə, pozuntu sayılır.', ok: false, law: 'Maddə 6', exp: 'Pozuntunun mövcudluğu sübutun formasından asılı deyil.' }
+        ]
+      }
+    ];
+
+    function createQuiz(container, questions, legalLinkHref) {
+      let quizIdx = 0;
+      let quizScore = 0;
+      let quizSelected = null;
+      let quizSubmitted = false;
 
     function renderQuiz() {
+      const QUIZ = questions;
+      const quizContainer = container;
       if (quizIdx >= QUIZ.length) {
+        const ratio = quizScore / QUIZ.length;
         quizContainer.innerHTML = `
           <div class="civic-results-card">
             <span class="civic-results-badge">TESTİN NƏTİCƏSİ</span>
-            <h3 class="civic-results-title">${quizScore >= 4 ? 'Təbriklər! Yüksək Etik Bilik və Qərar Bacarığı' : 'Etik Qanunvericiliyi Yenidən Nəzərdən Keçirmək Tövsiyə Olunur'}</h3>
+            <h3 class="civic-results-title">${ratio >= 0.8 ? 'Təbriklər! Yüksək Etik Bilik və Qərar Bacarığı' : 'Etik Qanunvericiliyi Yenidən Nəzərdən Keçirmək Tövsiyə Olunur'}</h3>
             <div class="civic-results-score">
               <span class="civic-big-score">${quizScore}</span>
               <span class="civic-total-score">/ ${QUIZ.length} Düzgün</span>
             </div>
             <p class="civic-results-text">
-              ${quizScore === 5 ? 'Siz Azərbaycan Respublikasının dövlət qulluğunda etik davranış qaydaları və antikorrupsiya standartlarını dərindən mənimsəmisiniz.' :
-                quizScore === 4 ? 'Nəticəniz çox yaxşıdır! Əsas etik prinsipləri və maraqların toqquşması mexanizmlərini düzgün qiymətləndirirsiniz.' :
+              ${ratio === 1 ? 'Siz Azərbaycan Respublikasının dövlət qulluğunda etik davranış qaydaları və antikorrupsiya standartlarını dərindən mənimsəmisiniz.' :
+                ratio >= 0.8 ? 'Nəticəniz çox yaxşıdır! Əsas etik prinsipləri və maraqların toqquşması mexanizmlərini düzgün qiymətləndirirsiniz.' :
                 'Bəzi mürəkkəb etik situasiyalarda qanunun tələblərini bir daha xatırlamaq faydalı olardı. Bölmələrdəki qanunvericilik izahlarını oxumağı tövsiyə edirik.'}
             </p>
             <div class="civic-results-actions">
-              <button type="button" class="civic-btn-primary" id="restartQuizBtn">Testi Yenidən Keç ↺</button>
-              <a href="#qanunvericilik" class="civic-btn-secondary">Qanunvericiliyə Keçid</a>
+              <button type="button" class="civic-btn-primary" data-quiz-action="restart">Testi Yenidən Keç ↺</button>
+              <a href="${legalLinkHref}" class="civic-btn-secondary">Qanunvericiliyə Keçid</a>
             </div>
           </div>
         `;
-        document.getElementById('restartQuizBtn').addEventListener('click', () => {
+        quizContainer.querySelector('[data-quiz-action="restart"]').addEventListener('click', () => {
           quizIdx = 0;
           quizScore = 0;
           quizSelected = null;
@@ -2056,9 +2121,9 @@
 
           <div class="civic-quiz-actions">
             ${!quizSubmitted ? `
-              <button type="button" class="civic-btn-primary" id="confirmAnswerBtn" ${quizSelected === null ? 'disabled' : ''}>Cavabı Təsdiq Et</button>
+              <button type="button" class="civic-btn-primary" data-quiz-action="confirm" ${quizSelected === null ? 'disabled' : ''}>Cavabı Təsdiq Et</button>
             ` : `
-              <button type="button" class="civic-btn-primary" id="nextQuestionBtn">${quizIdx + 1 < QUIZ.length ? 'Növbəti Kazus →' : 'Nəticəyə Bax →'}</button>
+              <button type="button" class="civic-btn-primary" data-quiz-action="next">${quizIdx + 1 < QUIZ.length ? 'Növbəti Kazus →' : 'Nəticəyə Bax →'}</button>
             `}
           </div>
         </div>
@@ -2072,7 +2137,7 @@
         });
       });
 
-      const confirmBtn = document.getElementById('confirmAnswerBtn');
+      const confirmBtn = quizContainer.querySelector('[data-quiz-action="confirm"]');
       if (confirmBtn) {
         confirmBtn.addEventListener('click', () => {
           if (quizSelected === null) return;
@@ -2082,7 +2147,7 @@
         });
       }
 
-      const nextBtn = document.getElementById('nextQuestionBtn');
+      const nextBtn = quizContainer.querySelector('[data-quiz-action="next"]');
       if (nextBtn) {
         nextBtn.addEventListener('click', () => {
           quizIdx++;
@@ -2092,11 +2157,155 @@
         });
       }
     }
-    renderQuiz();
+      renderQuiz();
+    }
+
+    // Home page quiz (5 dilemmas) and dedicated test page (10 dilemmas)
+    createQuiz(document.getElementById('quizContainer'), QUIZ, '#qanunvericilik');
+    createQuiz(document.getElementById('quizPageEngine'), QUIZ.concat(QUIZ_EXTRA), '#page=qanun');
 
     // 8. Back to top button
     document.getElementById('backToTopBtn').addEventListener('click', () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // 9. SPA Navigation (navbar pages, hamburger menu, hash routing)
+    const PAGES = ['home', 'prinsiplər', 'nezaret', 'qanun', 'test', 'resurslar'];
+    const navbar = document.getElementById('civicNavbar');
+    const navLinks = document.getElementById('navLinks');
+    const navHamburger = document.getElementById('navHamburger');
+
+    function closeMobileMenu() {
+      navLinks.classList.remove('open');
+      navHamburger.classList.remove('open');
+      navHamburger.setAttribute('aria-expanded', 'false');
+    }
+
+    function showPage(page, scrollTargetId) {
+      if (!PAGES.includes(page)) page = 'home';
+      document.querySelectorAll('.spa-page').forEach(p => {
+        p.classList.toggle('hidden', p.id !== `page-${page}`);
+      });
+      navLinks.querySelectorAll('a[data-page]').forEach(a => {
+        a.classList.toggle('active', a.dataset.page === page);
+      });
+      closeMobileMenu();
+      if (scrollTargetId) {
+        const el = document.getElementById(scrollTargetId);
+        if (el) { el.scrollIntoView({ behavior: 'smooth' }); return; }
+      }
+      window.scrollTo({ top: 0, behavior: 'auto' });
+    }
+
+    function routeFromHash() {
+      const hash = decodeURIComponent(location.hash.slice(1));
+      if (hash.startsWith('page=')) {
+        showPage(hash.slice(5));
+      } else if (hash && document.getElementById(hash)) {
+        // In-page anchor (e.g. footer links) — make sure the page containing it is visible
+        const target = document.getElementById(hash);
+        const pageEl = target.closest('.spa-page');
+        showPage(pageEl ? pageEl.id.replace('page-', '') : 'home', hash);
+      } else {
+        showPage('home');
+      }
+    }
+
+    navLinks.querySelectorAll('a[data-page]').forEach(a => {
+      a.addEventListener('click', (e) => {
+        e.preventDefault();
+        const page = a.dataset.page;
+        history.pushState(null, '', page === 'home' ? location.pathname : `#page=${encodeURIComponent(page)}`);
+        showPage(page);
+      });
+    });
+
+    document.getElementById('navLogoBtn').addEventListener('click', (e) => {
+      e.preventDefault();
+      history.pushState(null, '', location.pathname);
+      showPage('home');
+    });
+
+    navHamburger.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      navHamburger.classList.toggle('open', isOpen);
+      navHamburger.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    window.addEventListener('hashchange', routeFromHash);
+    window.addEventListener('popstate', routeFromHash);
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 10);
+    }, { passive: true });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeModal();
+        closeMobileMenu();
+      }
+    });
+
+    routeFromHash();
+
+    // 10. Oversight structure diagram (Etik nəzarət page)
+    const OVERSIGHT_NODES = [
+      { badge: 'Ümumi Rəhbərlik', title: 'Dövlət Orqanının Rəhbəri', text: 'Dövlət orqanında etik davranış qaydalarının tətbiqinə, xidməti intizama və daxili mühitin sağlamlığına birbaşa cavabdehdir. Qanunun tələbi əsasında etik standartların həyata keçirilməsini koordinasiya edir.', items: ['Etik davranış qaydalarının pozulması faktları üzrə xidməti yoxlama təyin edir', 'Dövlət orqanında müstəqil etik müvəkkili vəzifəsinə şəxs təyin edir', 'Təsdiq olunmuş pozuntular üzrə intizam tənbehi tədbirləri tətbiq edir', 'İllik etik vəziyyət barədə hesabatlılığı təmin edir'] },
+      { badge: 'Daxili Məsləhət və Monitorinq', title: 'Etik Müvəkkil İnstitutu', text: 'Dövlət orqanı daxilində etik davranış qaydalarına əməl olunmasını izləyən, qulluqçulara məsləhət verən və pozuntu hallarını ilkin qiymətləndirən səlahiyyətli şəxsdir.', items: ['Qulluqçulara etik dilemmalar üzrə konfidensial məsləhət verir', 'Maraqların toqquşması və hədiyyə hallarını qeydə alır', 'Etik pozuntular barədə rəhbərliyə əsaslandırılmış məlumat təqdim edir', 'Etik qaydalar üzrə daxili təlimlər təşkil edir'] },
+      { badge: 'Dövlət Səviyyəsində Nəzarət', title: 'Antikorrupsiya Komissiyası', text: 'Korrupsiyaya qarşı Mübarizə üzrə Komissiya dövlət orqanlarında antikorrupsiya və etik davranış standartlarının tətbiqinə ümumi nəzarəti həyata keçirir.', items: ['Dövlət orqanlarının etik hesabatlarını təhlil edir', 'Antikorrupsiya siyasətinin həyata keçirilməsini monitorinq edir', 'Qanunvericiliyin təkmilləşdirilməsi üzrə təkliflər hazırlayır', 'Beynəlxalq antikorrupsiya standartları ilə uyğunluğu qiymətləndirir'] },
+      { badge: 'Vətəndaş İştirakı', title: 'İctimai Nəzarət', text: 'Vətəndaşlar, vətəndaş cəmiyyəti institutları və media dövlət qulluqçularının davranışına ictimai nəzarəti müraciət, şikayət və ictimai müzakirələr vasitəsilə həyata keçirir.', items: ['Etik pozuntular barədə dövlət orqanına müraciət və şikayət hüququ', 'Müraciətlərə 15 iş günü ərzində cavab almaq təminatı', 'Şikayət etdiyinə görə təqib olunmama zəmanəti', 'Dövlət orqanlarının illik hesabatları ilə tanışlıq imkanı'] }
+    ];
+
+    const oversightNodes = document.querySelectorAll('#oversightNodes .oversight-node');
+    function selectOversightNode(idx) {
+      const n = OVERSIGHT_NODES[idx];
+      if (!n) return;
+      oversightNodes.forEach(el => el.classList.toggle('active', parseInt(el.dataset.node, 10) === idx));
+      document.getElementById('oversightBadge').textContent = n.badge;
+      document.getElementById('oversightTitle').textContent = n.title;
+      document.getElementById('oversightText').textContent = n.text;
+      document.getElementById('oversightItems').innerHTML = n.items.map(i => `<li>${i}</li>`).join('');
+    }
+    oversightNodes.forEach(el => {
+      const idx = parseInt(el.dataset.node, 10);
+      el.addEventListener('click', () => selectOversightNode(idx));
+      el.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); selectOversightNode(idx); }
+      });
+    });
+
+    // 11. Law accordion (Qanunvericilik page)
+    document.querySelectorAll('#lawAccordion .law-card-header-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.law-card-item');
+        const isOpen = item.classList.toggle('open');
+        btn.setAttribute('aria-expanded', String(isOpen));
+        const toggle = btn.querySelector('.law-card-toggle');
+        if (toggle) toggle.textContent = isOpen ? '−' : '+';
+      });
+    });
+
+    // 12. Resources search & category filter (Resurslar page)
+    const resSearch = document.getElementById('resSearch');
+    const resCatBtns = document.querySelectorAll('.resources-cat-btn');
+    let activeResCat = 'all';
+
+    function filterResources() {
+      const q = resSearch.value.trim().toLocaleLowerCase('az');
+      document.querySelectorAll('#resourcesGrid .resource-card').forEach(card => {
+        const matchCat = activeResCat === 'all' || card.dataset.rescat === activeResCat;
+        const matchText = !q || card.textContent.toLocaleLowerCase('az').includes(q);
+        card.classList.toggle('filtered-out', !(matchCat && matchText));
+      });
+    }
+
+    resSearch.addEventListener('input', filterResources);
+    resCatBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        resCatBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        activeResCat = btn.dataset.rescat;
+        filterResources();
+      });
     });
   </script>
 </body>
